@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media print
+	
+{
+	html {font-size:11pt !important;}
+	html, body, header, header *, .top-nav, .top-nav *, .page-wrapper, main, .print, .print *, .live, .live *, .print-only, .resource {display:block !important; height:auto !important; position:relative !important; top:auto !important; background:none !important; font-size:11pt;}
+	.resource {display:inline-block !important;}
+	#PAGE_1 img {display:block; max-width:500px; margin:0 auto 30px auto;}
+	.print a, .live a,  .print span.bold, .live span.bold {display:inline !important; text-decoration:none !important; color:#000 !important;}
+	.print a.block::after, .live a.block::after {content:"On the web at: "attr(href) !important; display:block; font-size:95% !important; font-style:italic !important;}
+	.print a.inline::after, .live a.inline::after {content:' (On the web at: 'attr(href)')'; font-size:95% !important; font-style:italic !important; word-break:break-all !important;}
+	
+	.live::before, .print::before {content:'Page 'attr(data-page-number); display:block; width:100%; padding-bottom:3px; margin-bottom:5px; border-bottom:1px solid; text-align:left;}
+	.resource .print::before {content:attr(data-page-number)' Page'; display:block; width:100%; padding-bottom:3px; margin-bottom:5px; border-bottom:1px solid;}
+	*:not(.live) {display:none;}
+	.print.disclaimer {}
+	.print.disclaimer::before {content:'Print Disclaimer';}
+	.print, .live {left:0px !important; padding:20px 0 !important; page-break-inside:avoid !important;}
+	.page-mainbar, .page-sidebar {width:100% !important; height:auto !important; padding:0 !important;}
+	.page-sidebar {padding:15px !important; margin-top:1em !important; right:auto !important; background-color:#ddd !important;}
+	.page-sidebar img {width:55% !important;}
+	.print-float-right {width:auto !important; float:right !important;}
+	fieldset {margin-left:5px !important;}
+	label {border-style:none !important; color:black !important;}
+	.live label span, .print label span {display:none !important;}
+	.live label div:first-of-type, .print label div:first-of-type {display:inline !important;}
+	.live label.wrong div:first-of-type, .print label.wrong div:first-of-type {display:none !important;}
+	.live label div::before, .print label div::before {content:' - ';}
+	.no-print, .live input, .print input, .live legend, .print legend {display:none !important;}
+	h1, .lesson-title, .lesson-title * {text-align:center !important; padding:10px !important; margin:0 !important; font-size:140% !important;}
+	h2, #PRINT_SCORE {font-size:130% !important;}
+	h2, p, ul, ol {margin-bottom:1em !important;}
+	.lesson-title>span {width:100% !important;}
+	.live li, .print li {display:list-item !important; margin-bottom:6px !important;}
+	.print abbr, .live abbr, .print .no-wrap, .live .no-wrap {text-decoration:none !important; display:inline !important;}
+    
+    ol.roman {list-style:none;} 
+    ol.roman li {display:inline;}
+	
+	.print a.sub-cta, .live a.sub-cta {text-decoration:none;}
+	.print a.sub-cta::after, .live a.sub-cta::after {content:"On the web at: "attr(href) !important; font-style:italic !important; font-size:95% !important; display:block !important; margin-bottom:8px !important;}
+	.print a.sub-cta>h3, .live a.sub-cta>h3 {border-radius:0px !important; padding:0px !important; font-size:1em; color:#000 !important; background:none !important; text-align:left !important; margin-bottom:5px !important;}
+	.print a.internal::after, .live a.internal::after {content:'' !important;}
+	.print a.internal, .live a.internal {color:#000;}
+	
+	.print table, .live table {display:table !important; table-layout:fixed !important;overflow-wrap:break-word;word-break:break-all;}
+	.print table caption, .live table caption {display:table-caption !important;overflow-wrap:break-word;word-break:break-all;}
+	.print table .colHead, .live table .colHead {display:none !important;overflow-wrap:break-word;word-break:break-all;}
+	.print table thead, .live table thead {position:relative !important; top:auto !important; display:table-header-group !important; background-color:#ddd !important;overflow-wrap:break-word;word-break:break-all;}
+	.print table tbody, .live table tbody {display:table-row-group !important;overflow-wrap:break-word;word-break:break-all;}
+	.print table tr, .live table tr {display:table-row !important; border:none !important;overflow-wrap:break-word;word-break:break-all;}
+	.print table td, .print table th, .live table td, .live table th {display:table-cell !important; border:1px solid #000 !important; width:auto !important;overflow-wrap:break-word;word-break:break-all;}
+	.print table caption, .print table th, .live table caption, .live table th {text-align:left !important; font-weight:bold !important;overflow-wrap:break-word;word-break:break-all;}
+	.print table a, .live table a {overflow-wrap:break-word;word-break:break-all;}
+	
+	.page-content>*:last-child, .page-mainbar>*:last-child:not(.page-sidebar), .last-child-margin {margin-bottom:0px !important;}
+	
+	#PRINT_SCORE>span {display:inline !important; font-size:inherit !important;}
+	#REVIEW .live a, .live #PASSED, .live #FAILED {display:none !important;}
+	#REVIEW fieldset {margin-left:0 !important;}
+	.live #PASSED.show, .live #FAILED.show {display:block !important;}
+	.more-info {display:none !important;}
+	/*.live .assess-message.hide {display:block !important; width:100% !important; left:0px !important; padding:0 !important; box-shadow:none !important; text-align:left !important;}
+	.live .assess-message.hide>* {display:none !important;}*/
+	
+	.xxx:not(.right)::after {content:' - CORRECT ANSWER'; font-weight:bold; white-space:nowrap;} 
+	.wrong>div {display:none !important;}
+	.wrong::after {content:' - YOUR ANSWER'; font-weight:bold; white-space:nowrap;}
+	
+	.print-image {width:40% !important;}
+	
+	.print .note, .live .note {display:table !important; margin-bottom:2vh !important;}
+	.print .note>*, .live .note>* {display:table-cell !important;}
+	
+	#POST .page-content, #POST h2+.bold {display:none !important;}
+}

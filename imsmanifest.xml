@@ -1,0 +1,125 @@
+<?xml version="1.0" standalone="no" ?>
+<manifest identifier="SNF_CB" version="2.0" 
+xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" 
+xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+
+	<metadata>
+	<schema>ADL SCORM</schema>
+	<schemaversion>1.2</schemaversion>
+	
+		<lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" >
+		
+				<general>
+				
+					<title>
+						<langstring>SNF Consolidated Billing</langstring>
+					</title>
+					
+				</general>
+				
+				<metametadata>
+					<!--<metadatascheme>LOMv1.0</metadatascheme>-->
+					<metadatascheme>ADL SCORM 1.2</metadatascheme>
+					<language>en-US</language>
+				</metametadata>
+				
+				<technical>
+					<format>text/html</format>
+					<location type="URI"></location>
+				</technical>
+				
+		</lom>
+		
+	</metadata>
+	
+	<organizations default="SNF_CB013-032018-2">
+		<organization identifier="SNF_CB013-032018-2" structure="hierarchical">
+		
+			<title>SNF Consolidated Billing</title>
+			
+			<item identifier="intro" identifierref="intro_IDREF" isvisible="true">
+				<title>Introduction</title>
+			</item>
+			
+			<item identifier="m1" identifierref="m1_IDREF" isvisible="true">
+				<title>Lesson 1: SNF Background Information</title>
+				<adlcp:prerequisites type="aicc_script"><![CDATA[intro]]></adlcp:prerequisites>
+			</item>
+			
+			<item identifier="m2" identifierref="m2_IDREF" isvisible="true">
+				<title>Lesson 2: Consolidated Billing</title>
+				<adlcp:prerequisites type="aicc_script"><![CDATA[m1]]></adlcp:prerequisites>
+			</item>
+			
+			<item identifier="m3" identifierref="m3_IDREF" isvisible="true">
+				<title>Lesson 3: Services Excluded from Part A SNF Consolidated Billing</title>
+				<adlcp:prerequisites type="aicc_script"><![CDATA[m2]]></adlcp:prerequisites>
+			</item>
+			
+			<item identifier="m4" identifierref="m4_IDREF" isvisible="true">
+				<title>Lesson 4: SNF Consolidated Billing During a Noncovered Part B Stay</title>
+				<adlcp:prerequisites type="aicc_script"><![CDATA[m3]]></adlcp:prerequisites>
+			</item>
+			
+			<item identifier="m5" identifierref="m5_IDREF" isvisible="true">
+				<title>Lesson 5: “Under Arrangement” Agreements</title>
+				<adlcp:prerequisites type="aicc_script"><![CDATA[m4]]></adlcp:prerequisites>
+			</item>
+			
+			<item identifier="post" identifierref="post_IDREF" isvisible="true">
+				<title>Post-Assessment</title>
+				<adlcp:prerequisites type="aicc_script"><![CDATA[m5]]></adlcp:prerequisites>
+				<adlcp:masteryscore>70</adlcp:masteryscore>
+			</item>
+			
+		</organization>
+	</organizations>
+	
+	<resources>
+	
+		<resource identifier="intro_IDREF" type="webcontent" href="intro/intro.html"  adlcp:scormtype="sco">
+			<file href="intro/intro.html" />
+			<file href="000-Main_Template_Files/main-js/APIwrapper.js" />
+			<file href="000-Main_Template_Files/main-js/SCOFunctions.js" />
+		</resource>
+		
+		<resource identifier="m1_IDREF" type="webcontent" href="lesson1/lesson1.html"  adlcp:scormtype="sco">
+			<file href="lesson1/lesson1.html" />
+			<file href="000-Main_Template_Files/main-js/APIwrapper.js" />
+			<file href="000-Main_Template_Files/main-js/SCOFunctions.js" />
+		</resource>
+		
+		<resource identifier="m2_IDREF" type="webcontent" href="lesson2/lesson2.html"  adlcp:scormtype="sco">
+			<file href="lesson2/lesson2.html" />
+			<file href="000-Main_Template_Files/main-js/APIwrapper.js" />
+			<file href="000-Main_Template_Files/main-js/SCOFunctions.js" />
+		</resource>
+		
+		<resource identifier="m3_IDREF" type="webcontent" href="lesson3/lesson3.html"  adlcp:scormtype="sco">
+			<file href="lesson3/lesson3.html" />
+			<file href="000-Main_Template_Files/main-js/APIwrapper.js" />
+			<file href="000-Main_Template_Files/main-js/SCOFunctions.js" />
+		</resource>
+		
+		<resource identifier="m4_IDREF" type="webcontent" href="lesson4/lesson4.html"  adlcp:scormtype="sco">
+			<file href="lesson4/lesson4.html" />
+			<file href="000-Main_Template_Files/main-js/APIwrapper.js" />
+			<file href="000-Main_Template_Files/main-js/SCOFunctions.js" />
+		</resource>
+		
+		<resource identifier="m5_IDREF" type="webcontent" href="lesson5/lesson5.html"  adlcp:scormtype="sco">
+			<file href="lesson5/lesson5.html" />
+			<file href="000-Main_Template_Files/main-js/APIwrapper.js" />
+			<file href="000-Main_Template_Files/main-js/SCOFunctions.js" />
+		</resource>
+		
+		<resource identifier="post_IDREF" type="webcontent" href="post/post.html"  adlcp:scormtype="sco">
+			<file href="post/post.html" />
+			<file href="000-Main_Template_Files/main-js/APIwrapper.js" />
+			<file href="000-Main_Template_Files/main-js/SCOFunctions.js" />
+		</resource>
+		
+	</resources>
+</manifest>

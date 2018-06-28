@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page-title {position:fixed; width:100%; height:100vh; cursor:pointer; padding:0; overflow:hidden; background-color:#fff; top:0px; bottom:0px; left:0px; z-index:9999; opacity:1.0; -webkit-transition:opacity 0.7s, z-index 0.7s; transition:opacity 0.7s, z-index 0.7s;}
+.page-title.enter {opacity:0; /*bottom:-100%;*/ z-index:-1;}
+.page-title.move {top:-9999px; /*bottom:-100%;*/ z-index:-1;}
+.page-title h2 {text-align:center;}
+
+#TITLE_BG {position:fixed; width:100%; top:85px;}
+
+.mln-head, .logo-foot {width:100%; background-color:#d0f2e9; overflow:visible;}
+.mln-head {top:0px; position:relative;}
+.mln-head>img {width:auto;}
+
+.logo-foot {max-height:450px; padding:20px; position:absolute; bottom:0px; overflow:visible; margin-bottom:0 !important;}
+.logo-foot>img {height:99%; width:auto;}
+
+.click-circle {font-family:Helvetica, Arial, "sans-serif"; background-color:#085f5d; height:100%; border:none; font-weight:bold; text-transform:uppercase; position:absolute; font-size:115%; line-height:1; box-shadow:0px 0px 0px #003052;}
+
+@viewport {
+	width: device-width;
+}
+
+
+
+@media (min-width:0px) {
+	.mln-head {height:19vw}
+	/*.mln-head>img {width:100vw; height:auto; max-height:25vh; position:relative; left:-25vw;}*/
+	.page-title h2 {font-size:170%; color:#085f5d; margin-top:5vh;}
+	.title-small {display:inline; position:absolute; top:19vw; z-index:-1; width:100vw;}
+	.title-large {display:none;}
+	.logo-foot {height:45%; text-align:center; padding-top:50px;}
+	.logo-foot>img {height:35%; width:auto;}
+	.click-circle {width:100px; height:100px; border-radius:50px; top:-50px; left:calc(50% - 50px); font-size:14px; line-height:1.3;}
+}
+
+
+
+@media (min-width:600px) {
+	.page-title h2 {font-size:6vh; width:calc(50% - 50px); position:absolute; right:50px; text-align:right; margin-top:8vh;}
+	.title-large {display:inline; position:absolute; top:50px; z-index:-1; width:100vw;}
+	.title-small {display:none;}
+	.mln-head {height:109px;}
+	.mln-head>img {height:140px; left:0px;}
+	.logo-foot {height:40%; text-align:right; padding-top:20px;}
+	.logo-foot>img {height:40%; width:auto;}
+	.click-circle {width:124px; height:124px; border-radius:62px; top:-62px; left:calc(50% - 62px); font-size:16px;}
+}
+
+
+
+@media (min-width:1000px) {
+	.page-title h2 {font-size:8vh;}
+	.title-large {top:0px;}
+}

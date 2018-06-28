@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="013-SNF_CB:032018">
+<title>SNF Consolidated Billing</title>
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	LESSON 5
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	All files starting with 000-Main are template files. Do not edit these for individual 
+	courses (except for 'KEY' and 'WHY'.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<!-- Core CSS -->
+<link href="../000-Main_Template_Files/main-css/WBTprint.css" rel="stylesheet" type="text/css">
+<link href="../000-Main_Template_Files/main-css/WBTtemplate.css" rel="stylesheet" type="text/css">
+<link href="../000-Main_Template_Files/main-css/WBTnavigation.css" rel="stylesheet" type="text/css">
+<link href="../000-Main_Template_Files/main-css/WBTresources.css" rel="stylesheet" type="text/css">
+<!-- Title Page CSS 
+<link href="../000-Main_Template_Files/main-css/WBTtitle.css" rel="stylesheet" type="text/css">-->
+<!-- Assessment Page CSS -->
+<link href="../000-Main_Template_Files/main-css/WBTassess.css" rel="stylesheet" type="text/css">
+
+<!-- JQUERY JavaScript -->
+<script src="../000-Main_Template_Files/main-js/jquery/jquery.min.js"></script>
+<!-- SCORM JavaScript -->
+<script src="../000-Main_Template_Files/main-js/APIWrapper.js"></script>
+<script src="../000-Main_Template_Files/main-js/SCOFunctions.js"></script>
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	Add course specific CSS and Javascript below, or at the end of the body if needed.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<!-- 013 CSS -->
+<!-- 013 Javascript -->
+
+<!-- Backwards IE -->
+<!--[if lt IE 9]>
+	<link href="../000-Main_Template_Files/main-css/IE9.css" rel="stylesheet" type="text/css">
+	<script src="../000-Main_Template_Files/main-js/jquery/jquery1.10.2.min.js"></script>
+<![endif]-->
+<script>
+	for(var e,l='article aside figure figcaption footer header nav main section time'.split(' ');e=l.pop();document.createElement(e));
+</script>
+
+</head>
+
+<body id="LESSON5" onUnload="return unloadPage()">
+	
+	<header data-version="" class="fixed-top">
+		<div class="max-padded">
+			<h1>SNF Consolidated Billing</h1>
+		</div>
+	</header>
+	
+	<nav class="navbar top-nav">
+		<!--<div class="container max-padded">-->
+		
+			<div class="lesson-title bold">
+				<span>Lesson 5: “Under Arrangement” Agreements</span>
+			</div>
+			<div class="nav-set head-nav no-print">
+				<button type="button" class="btn-main" id="NAV_REFERENCE" onClick="openResources('REFERENCE')" tabindex="-1">Reference</button>
+				<button type="button" class="btn-main" id="NAV_HELP" onClick="openResources('HELP')" tabindex="-1">Help</button>
+				
+				<!-- Close Resources -->
+				<button type="button" class="btn-main close btn-cta" id="NAV_CLOSE_REFERENCE" onClick="closeResources()" tabindex="-1">Close Reference</button>
+				<button type="button" class="btn-main close btn-cta" id="NAV_CLOSE_HELP" onClick="closeResources()" tabindex="-1">Close Help</button>
+				<button type="button" class="btn-main close btn-cta" id="NAV_CLOSE_REVIEW" onClick="closeResources()" tabindex="-1">Close<br>Review</button>
+				
+				<button type="button" class="btn-main" id="NAV_EXIT" tabindex="-1" onClick="doQuit()">Exit</button>
+			</div>
+			
+		<!--</div>-->
+	</nav>
+	
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	Begin Main Lesson Content 
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<div class="page-wrapper">
+		<main class="container content">
+		
+			<!-- ####### 1 ####### -->
+			<div class="container page-content live" id="PAGE_1" data-page-number="1" data-sequence="start" tabindex="-1">
+				<h2>Lesson 5: Introduction and Learning Objectives</h2>
+				
+				<p>In this lesson, you’ll learn about “under arrangement” agreements. It should take about 5 minutes to complete.</p>
+
+				<p>After completing this lesson, you should be able to correctly:</p>
+
+				<ul>
+					<li>Identify “under arrangement” agreements between Skilled Nursing Facilities (SNFs) and other providers or suppliers</li>
+				</ul>
+
+				<div class="nav-set no-print">
+					<button class="btn-body btn-cta print-lesson">Print a copy of this lesson</button>
+				</div>
+			</div>
+			
+			<!-- ####### 2 ####### -->
+			<div class="container page-content add-side" id="PAGE_2" data-page-number="2" tabindex="-1">
+				<div class="page-mainbar">
+					<h2>“Under Arrangement” Agreements</h2>
+
+					<p>When an outside provider or supplier has an existing arrangement and furnishes a service subject to Consolidated Billing (CB), the provider or supplier looks to the <abbr title="Skilled Nursing Facility">SNF</abbr> for its payment, and the SNF helps coordinate the process.</p>
+
+					<p>The SNF and the outside provider or supplier determine the specific details of payment by the SNF (in terms of how much the provider or supplier gets paid and when). However, regardless of whether the SNF has a formal arrangement with the outside provider or supplier, the SNF is still responsible to reimburse them for any of their services included in the SNF Prospective Payment System (PPS) global per diem rate.</p>
+            
+					<div>
+						<h3>Services Provided “Under Arrangement”</h3>
+
+						<p>When any Part A or Part B service is subject to SNF <abbr title="Consolidated Billing">CB</abbr>, the SNF must either furnish the service directly with its own resources or obtain the service from an outside entity (such as a supplier) under an “arrangement,” as described in <a href="https://www.ssa.gov/OP_Home/ssact/title18/1861.htm" class="inline" target="_blank" rel="noopener" tabindex="-1">&sect;&nbsp;1861(w) of the Social Security Act</a>.</p>
+					</div>
+
+					<aside class="page-sidebar">
+						<a href="https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/SNFPPS/BestPractices.html" class="sub-cta" target="_blank" rel="noopener" tabindex="-1"><h3>SAMPLE “UNDER ARRANGEMENT” AGREEMENTS</h3></a>
+
+						<p>Visit the CMS website to review sample agreements for services provided “under arrangement.”</p>
+					</aside>
+				</div>
+			</div>
+
+			<!-- ####### 3 ####### -->
+			<div class="container page-content" id="PAGE_3" data-page-number="3" data-sequence="start" tabindex="-1">
+				<h2>“Under Arrangement” and the Anti-Kickback Statute</h2>
+				
+				<p>Medicare provides best practice guidance, as well as sample agreements, between SNFs and specific entities for services under arrangement. Questions regarding the enforcement of the Anti-Kickback Statute fall within the exclusive purview of the U.S. Department of Health &amp; Human Services Office of Inspector General (OIG).</p>
+			</div>
+			
+			<!-- ####### 4 ####### -->
+			<div class="container page-content" id="PAGE_4" data-page-number="4" tabindex="-1">
+				<h2>SNF Responsibilities—Under Arrangement</h2>
+    
+				<p>The SNF must:</p>
+
+				<ul>
+					<li>Notify outside providers or suppliers when they treat a Medicare Part A SNF resident for services included in SNF CB</li>
+					<li>Inform all beneficiaries and their representative(s) about CB requirements when they become residents and each time they leave the premises of the facility</li>
+					<li>Ensure any outside source providing a service meets the applicable standards for that service</li>
+				</ul>
+
+				<div class="note">
+					<p class="bold">NOTE:&nbsp; </p>
+					<p>The SNF is the responsible party when beneficiaries in covered Part A stays receive medically necessary provider or supplier services. This applies even in cases when there is no arrangement or when the SNF did not know the service was ordered (for example, when a beneficiary receives a service while on a leave of absence from the SNF).</p>
+				</div>
+			</div>
+
+			<!-- ####### 5 ####### -->
+			<div class="container page-content" id="PAGE_5" data-page-number="5" tabindex="-1">
+				<h2>Provider or Supplier Responsibilities—Under Arrangement</h2>
+    
+				<p>The provider or supplier must:</p>
+
+				<ul>
+					<li>Verify Medicare Part A or B status with the beneficiary and the SNF prior to furnishing services</li>
+					<li>Not submit a separate Part B bill to Medicare Administrative Contractors (MACs) for services subject to CB</li>
+					<li>Look to the SNF for payment for services subject to CB</li>
+					<li>Inform all beneficiaries in a covered Part A stay of CB requirements pertaining to the services they receive</li>
+				</ul>
+				
+				<p>For more information about services provided “under arrangement,” refer to the MLN Matters&reg; article, <a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3592.pdf" class="inline" target="_blank" rel="noopener" tabindex="-1">Skilled Nursing Facility (SNF) Consolidated Billing Service Furnished Under an “Arrangement” with an Outside Entity</a>.</p>
+				
+				<p class="bold">Now, let’s review what you’ve learned about SNF responsibilities and CB.</p>
+
+			</div>
+			
+			<!-- ####### 6 ####### -->
+			<div class="container page-content page-question" id="PAGE_6" data-page-number="6" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">The Skilled Nursing Facility (SNF) should inform each beneficiary and/or his or her representative(s) about <abbr title="Skilled Nursing Facility">SNF</abbr> Consolidated Billing requirements for “under arrangement” agreements when he or she becomes a resident and each time he or she leaves the premises of the facility.</p>
+
+				<form name="L5_1" id="L5_1" action="#" method="get" onSubmit="checkAnswer('L5_1');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L5_1" class="aaa xxx">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L5_1" value="A" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L5_1" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L5_1" value="B" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_L5_1" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L5_1" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+
+							<li>
+								<label for="OPTIOND_L5_1" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_L5_1" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+
+			<!-- ####### 7 ####### -->
+			<div class="container page-content page-question" id="PAGE_7" data-page-number="7" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">A provider or supplier may bill his or her Medicare Administrative Contractor for services subject to the Skilled Nursing Facility (SNF) Consolidated Billing when no one at the <abbr title="Skilled Nursing Facility">SNF</abbr> answered the phone or responded to an email requesting a resident’s status.</p>
+
+				<form name="L5_2" id="L5_2" action="#" method="get" onSubmit="checkAnswer('L5_2');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L5_2" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L5_2" value="A" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L5_2" class="bbb xxx">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L5_2" value="B" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_L5_2" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L5_2" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+
+							<li>
+								<label for="OPTIOND_L5_2" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_L5_2" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+
+			<!-- ####### 8 ####### -->
+			<div class="container page-content page-question" id="PAGE_8" data-page-number="8" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">Who is responsible for “under arrangement” agreements?</p>
+
+				<form name="L5_3" id="L5_3" action="#" method="get" onSubmit="checkAnswer('L5_3');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L5_3" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L5_3" value="A" onClick="selection('A')" tabindex="-1"> 
+									The Centers for Medicare &amp; Medicaid Services
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L5_3" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L5_3" value="B" onClick="selection('B')" tabindex="-1"> 
+									The U.S. Department of Health &amp; Human Services Office of Inspector General
+								</label>
+							</li>
+							
+							<li>
+								<label for="OPTIONC_L5_3" class="ccc xxx">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L5_3" value="C" onClick="selection('C')" tabindex="-1"> 
+									The Skilled Nursing Facility
+								</label>
+							</li>
+
+							<!--<li>
+								<label for="OPTIOND_L5_3" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_L5_3" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+
+			<!-- ####### 9 ####### -->
+			<div class="container page-content" id="PAGE_9" data-page-number="9" data-sequence="start" tabindex="-1">
+				<h2>Discounts, Rebates, and Reductions in Price Regulations</h2>
+				
+				<p>Federal anti-fraud regulations apply to SNF agreements. The Anti-Kickback Statute and the Limitation on Certain Physician Referrals Statute (also known as the Physician Self-Referral Statute or Stark Law) prohibit certain referrals. Regulations and requirements pertain to discounts, rebates, or other reductions in price. For example, they may apply when a provider refers a resident for a designated health service to a SNF in which the provider owns an investment interest, or where a provider accepts a discounted payment from the SNF in exchange for more referrals.</p>
+				
+				<p>The <abbr title="Office of Inspector General">OIG</abbr> created a helpful <a href="https://oig.hhs.gov/compliance/provider-compliance-training/files/starkandakscharthandout508.pdf" class="inline" target="_blank" rel="noopener" tabindex="-1">comparison of the Anti-Kickback Statute and Stark Law</a>.</p>
+				
+				<p class="bold">Now, let’s review what you’ve learned about discounts, rebates, and price reductions.</p>
+			</div>
+			
+			<!-- ####### 10 ####### -->
+			<div class="container page-content page-question" id="PAGE_10" data-page-number="10" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">You must be careful when executing “under arrangement” agreements because they may violate:</p>
+
+				<form name="L5_4" id="L5_4" action="#" method="get" onSubmit="checkAnswer('L5_4');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L5_4" class="aaa xxx">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L5_4" value="A" onClick="selection('A')" tabindex="-1"> 
+									The Limitation on Certain Physician Referrals Statute (Stark Law)
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L5_4" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L5_4" value="B" onClick="selection('B')" tabindex="-1"> 
+									The National Correct Coding Initiative
+								</label>
+							</li>
+							
+							<li>
+								<label for="OPTIONC_L5_4" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L5_4" value="C" onClick="selection('C')" tabindex="-1"> 
+									The False Claims Act
+								</label>
+							</li>
+
+							<!--<li>
+								<label for="OPTIOND_LL5_4" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_LL5_4" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+
+			<!-- ####### 11 ####### -->
+			<div class="container page-content" id="PAGE_11" data-page-number="11" tabindex="-1">
+				<h2>Lesson 5 Summary</h2>
+				
+				<p>In Lesson 5, you’ve learned:</p>
+    
+				<ul>
+					<li>When an outside provider or supplier furnishes a service subject to Consolidated Billing (CB):
+						<ul>
+							<li>An existing arrangement in which the outside provider or supplier looks to the Skilled Nursing Facility (SNF) for its payment helps coordinate the process</li>
+							<li>Both the <abbr title="Skilled Nursing Facility">SNF</abbr> and the outside provider or supplier must check the beneficiary’s status and notify the beneficiary about <abbr title="Consolidated Billing">CB</abbr> requirements</li>
+						</ul>
+					</li>
+					<li>Federal anti-fraud regulations apply to SNF agreements; for example, the Anti-Kickback Statute and the Physician Self-Referral (Stark Law) prohibit certain referrals</li>
+				</ul>
+			</div>
+
+			<!-- ####### 12 ####### -->
+			<div class="container page-content" id="PAGE_12" data-page-number="12" data-sequence="end" tabindex="-1">
+				<h2>You’ve completed Lesson 5: “Under Arrangement” Agreements.</h2>
+				
+				<p>You must now complete the Post-Assessment. You must get a score of 70 percent or higher on the Post-Assessment to earn a certificate.</p>
+
+				<p>Select "Post-Assessment" in the course's Main Menu to take the Post-Assessment for this course, receive your final score, and print your certificate.</p>
+				
+				<div class="nav-set no-print">
+					<button class="btn-body btn-cta print-lesson">Print a copy of this lesson</button>
+				</div>
+			</div>
+		
+		</main>
+		
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	End Main Lesson Content 
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		
+		<div class="print disclaimer">
+			<p><span class="bold underline">Statutory and Regulatory Provisions</span><br>Under section 1140 of the Social Security Act (the Act), there are restrictions regarding the use of certain words, letters, emblems and symbols in connection with advertisements, solicitations or other productions. Specifically, the words “Social Security,” “Social Security Account,” “Social Security System,” “Social Security Administration,” “Medicare,” “Health Care Financing Administration,” “Department of Health and Human Services,” “Health and Human Services,” “Supplemental Security Income Program,” or “Medicaid” may not be used in a manner that gives (or could give) the impression that the solicitation, advertisement or other production is endorsed, authorized, affiliated with or approved by the Centers for Medicare and Medicaid Services or by the Department of Health and Human Services.</p>
+
+			<p>Similarly, letters such as “SSA,” “HCFA,”[1] “DHHS,” “HHS,” “SSI,” or other combinations or variations also may not be used to imply approval or involvement by the Department of Health and Human Services or CMS. The same rules apply to the use of symbols and emblems associated with the Department of Health and Human Services or with the Centers for Medicare and Medicaid Services, such as the design of the social security card, the Medicare card, or envelopes or stationary used by either entity. State agencies or political subdivisions of state agencies are exempt from these restrictions.</p>
+
+			<p>Government publications are not subject to copyright law.[2] However, section 1140(a)(2)(B) of the Act prohibits the reproduction, reprinting or distribution of items consisting of forms, applications or other publications of the Social Security Administration or the Department of Health and Human Services for a fee unless specific, written authorization is obtained as prescribed by regulations published by the Commissioner of Social Security or the Secretary of the Department of Health and Human Services.[3] Violations of Section 1140 are punishable by a civil money penalty of $5,000 for each piece of advertisement, solicitation or other production, and up to $25,000 for each instance where a broadcast or telecast is used as the means of transmission for the solicitation or advertisement. See 42 C.F.R. § 1003.102(b)(7). Section 1140 is enforced by the Office of the Inspector General. It should be noted that the use of a disclaimer to inform the public that a given solicitation or advertisement is not endorsed or approved of by any governmental entity does not waive the requirements of section 1140.</p>
+
+			<p><span class="bold underline">Analysis</span><br>CMS information may be used in an advertisement or solicitation if certain words, letters, emblems and symbols are not used in a manner that could conceivably give the impression that the advertisement has been approved, authorized or sanctioned by either the Department of Health and Human Services or CMS. The information CMS makes public on its web site can be incorporated into another web site for without prior authorization if the commercial entity does not charge a fee for reproductions of forms, applications or other government publications. If an individual wishes to copy a CMS publication, form or application verbatim in order to sell it to the public, CMS may refuse to grant written authorization for reproduction. However, it would be permissible for an individual to retrieve information from CMS’ website, incorporate or synthesize that information into his own publication, and sell the publication to the public. Arguably, CMS’ website constitutes a “publication” that cannot simply be copied by an individual who wishes to sell the information.</p>
+
+			<p>[1]We would also expect that the initials “CMS” would be included in this list in light of the agency’s new name.</p>
+			<p>[2]17 U.S.C. § 105.</p>
+			<p>[3]The Department has yet to publish regulations pursuant to subsection 1140(a)(2)(B); however, we believe that CMS has the authority to disapprove reproduction of its publications.</p>
+		</div>
+	</div>
+	
+	<nav class="navbar fixed-bottom z-fix">
+		<div class="container max-padded">
+			<div class="lesson-title CMS-art left">
+				<img src="../000-Main_Template_Files/main-svg/CMS-WBT-footer.svg" class="footer-flourish" alt="">
+			</div>
+			<div class="page-numbers">
+				Page <span id="PAGE_COUNT">X</span> of <span id="PAGE_TOTAL">X</span>
+			</div>
+		</div>
+		
+		<div class="nav-set foot-nav">
+			<button type="button" class="btn-goto" id="NAV_BACK" tabindex="-1">Back</button>
+			<button type="button" class="btn-goto" id="NAV_NEXT" tabindex="0">Next</button>
+			<img src="../000-Main_Template_Files/main-images/WBTfooterNavBG.png" class="no-mobile" alt="">
+			<img src="../000-Main_Template_Files/main-images/WBTfooterNavMobBG.png" class="mobile-only" alt="">
+			<span id="ALERT1">This lesson is complete! &nbsp; <a class="link-button btn-cta dynamic inline" href="javascript:doContinue('completed')" tabindex="-1">Post-Assessment</a> </span>
+			<span id="ALERT2">Answer the question to continue.</span>
+		</div>
+	</nav>
+	
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	START REFERENCES/HELP
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<aside class="container resource" id="HELP" tabindex="-1">
+		<nav class="navbar">
+			<div class="nav-set resource-nav">
+				<button type="button" class="btn-resource" id="NAV_ACRONYMS" onClick="openResSection('ACRONYMS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-acronyms.png" alt="">
+					<span>ACRONYMS</span>
+				</button>
+				<!-- <button type="button" class="btn-resource" id="NAV_GLOSS_HELP" onClick="openResSection('GLOSS_HELP');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-glossary.png" alt="">
+					<span>GLOSSARY</span>
+				</button> -->
+				<!--<button type="button" class="btn-resource" id="NAV_HYPERLINKS" onClick="openResSection('HYPERLINKS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-sites.png" alt="">
+					<span>HYPERLINKS</span>
+				</button>-->
+				<button type="button" class="btn-resource" id="NAV_NAVIGATION" onClick="openResSection('NAVIGATION');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-nav.png" alt="">
+					<span>NAVIGATION</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_WINDOWS" onClick="openResSection('WINDOWS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-pop.png" alt="">
+					<span>POP-UP WINDOWS</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_PRINTING" onClick="openResSection('PRINTING');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-print.png" alt="">
+					<span>PRINTING</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_SCREEN" onClick="openResSection('SCREEN');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-viewport.png" alt="">
+					<span>SCREEN SETTINGS</span>
+				</button>
+			</div>
+			<button type="button" class="mobile-menu" tabindex="-1"><span></span><span></span><span></span> MENU</button>
+		</nav>
+		
+		<div class="container resource-content default live">
+			<h2 class="align-center">SELECT A TOPIC FOR MORE INFORMATION</h2>
+		</div>
+			
+		<div class="container resource-content" data-page-number="Help" id="ACRONYMS">
+			<h2>ACROMYNS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Acronyms Help"></a></span></h2>
+
+			<p>Throughout this course, some acronyms are dash underlined so you can see the acronym definition after the acronym was defined. You can hold your mouse over acronyms for a reminder of what the acronym means.</p>
+		</div>
+		
+		<div class="container resource-content" data-page-number="Help" id="GLOSS_HELP">
+			<h2>GLOSSARY <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Glossary Help"></a></span></h2>
+
+			<p>Close this window, then select “REFERENCE” at the top of the screen for a link to the Centers for Medicare &amp; Medicaid Services (CMS) Glossary webpage.</p>
+		</div>
+		
+		<!--<div class="container resource-content" data-page-number="Help" id="HYPERLINKS">
+			<h2>HYPERLINKS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Hyperlinks Help"></a></span></h2>
+
+			<p>Certain words in the course are hyperlinks you may select to connect to a webpage or a document. Hyperlinked words appear blue and underlined.</p>
+		</div>-->
+		
+		<div class="container resource-content" data-page-number="Help" id="NAVIGATION">
+			<h2>NAVIGATION <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Navigation Help"></a></span></h2>
+
+			<p>The course navigation is located in the bottom area of the course window. The “BACK” and “NEXT” buttons help navigate a lesson one page at a time. Use these buttons to move forward and backward through a lesson (the “BACK” button is not available in the Post-Assessment).</p>
+      
+      <p>Use the “EXIT” button in any lesson to save your progress and exit the course. If you need to exit the course prior to completion, always use the “EXIT” button rather than the “X” button in the upper right-hand (Microsoft&reg; Windows&reg;) or left-hand (Apple&reg; OS&reg;) corner of the window. If you exit the assessment before reaching the summary page, you’ll lose your progress.</p>
+      
+      <p>The course also contains buttons that open pages outside of the current lesson. The “REFERENCE” button will open a reference section that includes resources for more information.</p>
+      
+      <p>Use the “SUBMIT ANSWER” button to submit your answer to the assessment questions.</p>
+		</div>
+		
+		<div class="container resource-content" data-page-number="Help" id="WINDOWS">
+			<h2>POP-UP WINDOWS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Pop-Up Windows Help"></a></span></h2>
+
+			<p>Pop-up windows appear throughout this course as new browser windows when you select a hyperlink. To close a pop-up window, select the “X” button in the upper right-hand (Microsoft&reg; Windows&reg;) or left-hand (Apple&reg; OS&reg;) corner of the pop-up window.</p>
+		</div>
+		
+		<div class="container resource-content" data-page-number="Help" id="PRINTING">
+			<h2>PRINTING <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Printing Help"></a></span></h2>
+
+			<p>At any point in this course, you may print the current lesson by pressing CTRL-P<!-- or print the current page, lesson, or entire course by selecting the “PRINT” button on each page-->. There is also a "PRINT A COPY OF THIS LESSON" button on the first and last pages of each printable lesson.</p>
+      
+      <div>
+      	<h3>Printing Your Certificate</h3>
+        
+        <p>To print your certificate, you must pass the Post-Assessment and complete the course evaluation.</p>
+        
+        <p class="bold">Follow the <a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNEdWebGuide/Downloads/MLN-WBT-Certificate-INX.pdf" tabindex="-1">certificate instructions</a> for steps on how to access and/or print your certificate.</p>
+      </div> 
+		</div>
+		
+		<!--<div class="container resource-content" data-page-number="Help" id="MOUSE">
+			<h2>USING YOUR MOUSE <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Mouse Help"></a></span></h2>
+      
+      <p>Selecting buttons, hyperlinks, and answer choices activates them. Selecting refers to moving the mouse cursor over the object and pressing the left button on your mouse. Moving the mouse cursor over an underlined text hyperlink will highlight the hyperlink.</p>
+      
+      <p>Hyperlinks in the navigation bar at the top of the page will highlight when you move your mouse over them. When you move the mouse cursor over any hyperlink on the page, the arrow changes to a hand.</p>
+      
+      <p>You can also access all navigation, hyperlinks, and controls by using the tab key.</p>
+    </div>-->
+    
+    <div class="container resource-content" data-page-number="Help" id="SCREEN">
+			<h2>SCREEN SETTINGS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Screen Settings Help"></a></span></h2>
+      
+      <div>
+      	<h3>Zoom</h3>
+        
+      	<p>If you have trouble viewing the course, you may adjust the magnification (zoom) on the page.</p>
+        
+        <ul>
+        	<li>To zoom in, increasing the size of the content, press and hold Ctrl/Command while pressing the +&nbsp;key.</li>
+          <li>To zoom out, decreasing the size of the content, press and hold Ctrl/Command while pressing the -&nbsp;key.</li>
+        </ul>
+      </div>
+      
+      <div>
+      	<h3>Resolution</h3>
+        
+      	<p>If you are still experiencing problems, you may adjust your screen settings. Follow the instructions in the hyperlinks below to adjust your screen settings.</p>
+        
+        <ul>
+        	<!--<li><a href="https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/display_change_screen_resolution.mspx?mfr=true" class="inline" tabindex="-1">Windows XP&reg;</a></li>-->
+          <li><a href="https://support.microsoft.com/en-us/help/14108/windows-7-change-screen-resolution" class="inline" tabindex="-1">Windows 7&reg;</a></li>
+          <li><a href="https://support.microsoft.com/en-us/help/14217/windows-8-get-best-display-on-your-monitor" class="inline" tabindex="-1">Windows 8&reg;</a></li>
+          <li><a href="https://support.microsoft.com/en-us/help/4027860/windows-10-view-display-settings" class="inline" tabindex="-1">Windows 10&reg;</a></li>
+        </ul>
+      </div>
+    </div>
+	</aside>
+	
+	<aside class="container resource" id="REFERENCE" tabindex="-1">
+		<nav class="navbar">
+			<div class="nav-set resource-nav">
+				<button type="button" class="btn-resource" id="NAV_DISCLAIMERS" onClick="openResSection('DISCLAIMERS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-disclaimer.png" alt="">
+					<span>DISCLAIMERS</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_GLOSSARY" onClick="openResSection('GLOSSARY');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-glossary.png" alt="">
+					<span>GLOSSARY</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_SITES" onClick="openResSection('SITES');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-sites.png" alt="">
+					<span>HELPFUL WEBSITES</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_AIDS" onClick="openResSection('AIDS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-aids.png" alt="">
+					<span>JOB AIDS</span>
+				</button>
+			</div>
+			<button type="button" class="mobile-menu" tabindex="-1"><span></span><span></span><span></span> MENU</button>
+		</nav>
+		
+		<div class="container resource-content default live">
+			<h2 class="align-center">SELECT A TOPIC FOR MORE INFORMATION</h2>
+		</div>
+		
+		<div class="container resource-content" data-page-number="Reference" id="DISCLAIMERS">
+			<h2>DISCLAIMERS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Disclaimers"></a></span></h2>
+      
+      <p>This course was current at the time it was published or uploaded onto the web. Medicare policy changes frequently so links to the source documents have been provided within the document for your reference.</p>
+      
+      <p>This course was prepared as a service to the public and is not intended to grant rights or impose obligations. This course may contain references or links to statutes, regulations, or other policy materials. The information provided is only intended to be a general summary. It is not intended to take the place of either the written law or regulations. We encourage readers to review the specific statutes, regulations, and other interpretive materials for a full and accurate statement of their contents.</p>
+      
+      <div>
+      	<h3>The Medicare Learning Network&reg; (MLN)</h3>
+        
+        <p>The Medicare Learning Network&reg;, <abbr title="Medicare Learning Network&reg;">MLN</abbr> Connects&reg;, and MLN Matters&reg; are registered trademarks of the U.S. Department of Health &amp; Human Services (HHS).</p>
+      </div>
+      
+      <div>
+      	<h3>CPT Disclaimer – American Medical Association (AMA) Notice</h3>
+        
+        <p>CPT codes, descriptions and other data only are copyright 2018 American Medical Association. All Rights Reserved. Applicable FARS/HHSAR apply.</p>
+        
+        <p>CPT is a registered trademark of the American Medical Association. Applicable FARS/HHSAR Restrictions Apply to Government Use.</p>
+        
+        <p>Fee schedules, relative value units, conversion factors and/or related components are not assigned by the AMA, are not part of CPT, and the AMA is not recommending their use. The AMA does not directly or indirectly practice medicine or dispense medical services. The AMA assumes no liability for data contained or not contained herein.</p>
+      </div>
+      
+      <div>
+      	<h3>NUBC Disclaimer</h3>
+        
+				<p>Copyright &copy; 2018, the American Hospital Association, Chicago, Illinois. Reproduced with permission. No portion of the AHA copyrighted materials contained within this publication may be copied without the express written consent of the AHA. AHA copyrighted materials including the UB-04 codes and descriptions may not be removed, copied, or utilized within any software, product, service, solution or derivative work without the written consent of the AHA. If an entity wishes to utilize any AHA materials, please contact the AHA at 312-893-6816.</p>
+        
+        <p>Making copies or utilizing the content of the UB-04 Manual, including the codes and/or descriptions, for internal purposes, resale and/or to be used in any product or publication; creating any modified or derivative work of the UB-04 Manual and/or codes and descriptions; and/or making any commercial use of UB-04 Manual or any portion thereof, including the codes and/or descriptions, is only authorized with an express license from the American Hospital Association.</p>
+        
+        <p>To license the electronic data file of UB-04 Data Specifications, contact Tim Carlson at (312) 893-6816 or Laryssa Marshall at (312) 893-6814. You may also contact us at <a href="mailto:ub04@healthforum.com" class="dynamic" tabindex="-1">ub04@healthforum.com</a>.</p>
+        
+        <p>The American Hospital Association (the “AHA”) has not reviewed, and is not responsible for, the completeness or accuracy of any information contained in this material, nor was the AHA or any of its affiliates, involved in the preparation of this material, or the analysis of information provided in the material. The views and/or positions presented in the material do not necessarily represent the views of the AHA. CMS and its products and services are not endorsed by the AHA or any of its affiliates.</p>
+      </div>
+    </div>
+    
+    <div class="container resource-content" data-page-number="Reference" id="GLOSSARY">
+			<h2>GLOSSARY <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Glossary Information"></a></span></h2>
+      
+      <p>For glossary terms, visit the <a href="https://www.cms.gov/apps/glossary" tabindex="-1">Centers for Medicare &amp; Medicaid Services Glossary</a>.</p>
+    </div>
+    
+    <div class="container resource-content" data-page-number="Reference" id="SITES">
+			<h2>HELPFUL WEBSITES <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Helpful Websites"></a></span></h2>
+      
+			<p>The list below provides additional resources related to this course. Please note that all of the following information was accurate at the time this course was created; however, information may change. For more information about SNFs, visit the <a href="https://www.cms.gov/Center/Provider-Type/Skilled-Nursing-Facility-Center.html" class="inline" target="_blank" rel="noopener" tabindex="-1">Skilled Nursing Facility Center webpage</a>.</p>
+      
+      <ul class="bulletless no-indent">
+      	<li>CMS Medicare Learning Network&reg; (MLN)
+      		<ul>
+						<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNGenInfo/index.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNGenInfo/index.html</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS Physician Center
+      		<ul>
+      			<li><a href="https://www.cms.gov/Center/Provider-Type/Physician-Center.html" class="inline internal" tabindex="-1">https://www.cms.gov/Center/Provider-Type/Physician-Center.html</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS Skilled Nursing Facility (SNF) Consolidated Billing (CB)
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS SNF CB Fiscal Intermediary (FI) File Explanation
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FI_File_Explanation.html" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FI_File_Explanation.html</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS SNF CB Major Category Explanation
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/Downloads/14MajorCatExpl.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/Downloads/14MajorCatExpl.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS SNF CB Part B Medicare Administrative Contractor (MAC) File Explanation
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FileExplanation.html" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FileExplanation.html</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS SNF Prospective Payment System (PPS)
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Medicare-Fee-For-Service-Payment/SNFPPS" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Medicare-Fee-For-Service-Payment/SNFPPS</a></li>
+      		</ul>
+      	</li>
+      	<li>Current Procedural Terminology (CPT) books
+      		<ul>
+      			<li><a href="https://commerce.ama-assn.org/store" class="inline internal" tabindex="-1">https://commerce.ama-assn.org/store</a></li>
+      		</ul>
+      	</li>
+      	<li>MDS 3.0
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/NursingHomeQualityInits/NHQIMDS30.html" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/NursingHomeQualityInits/NHQIMDS30.html</a></li>
+      		</ul>
+      	</li>
+      	<li>Medicare Benefit Policy Manual, Chapter 8
+      		<ul>
+      			<li><a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/bp102c08.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/bp102c08.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>Medicare Billing Information for Rural Providers and Suppliers Booklet
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243515.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243515.html</a></li>
+      		</ul>
+      	</li>
+      	<li>Medicare Claims Processing Manual, Chapter 6
+      		<ul>
+      			<li><a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/clm104c06.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/clm104c06.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>Medicare Claims Processing Manual, Chapter 7
+      		<ul>
+      			<li><a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/clm104c07.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/clm104c07.pdf</a></li>
+      		</ul>
+      	</li>
+      	<!--<li>Medicare Learning Network&reg; Electronic Mailing Lists: Keeping Health Care Professionals Informed Fact Sheet
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243324.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243324.html</a></li>
+      		</ul>
+      	</li>-->
+      	<li>MLN Matters&reg; Article, Skilled Nursing Facility (SNF) Consolidated Billing Service Furnished Under an ‘Arrangement’ with an Outside Entity
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3592.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3592.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Article, Changes for Medicare’s Skilled Nursing Facility (SNF) Consolidated Billing (CB) Edits for Evaluation and Management (E&amp;M) Services Billed by Hospitals to Fiscal Intermediaries (FIs)
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3910.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3910.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Article, Manual Updates to Clarify Skilled Nursing Facility (SNF), Inpatient Rehabilitation Facility (IRF), Home Health (HH), and Outpatient (OPT) Coverage Pursuant to Jimmo vs. Sebelius
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM8458.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM8458.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Special Edition Article, Skilled Nursing Facility Consolidated Billing
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/se0431.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/se0431.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Special Edition Article, Medicare Prescription Drug, Improvement, and Modernization Act (MMA) – Skilled Nursing Facility Consolidated Billing and Services of Rural Health Clinics and Federally Qualified Health Centers
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/SE0438.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/SE0438.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Article, ‘Incident to’ Services
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/se0441.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/se0441.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Provider Compliance Website
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/ProviderCompliance.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/ProviderCompliance.html</a></li>
+      		</ul>
+      	</li>
+      	<li>Office of Inspector General Comparison of the Anti-Kickback Statute and Stark Law
+      		<ul>
+      			<li><a href="https://oig.hhs.gov/compliance/provider-compliance-training/files/starkandakscharthandout508.pdf" class="inline internal" tabindex="-1">https://oig.hhs.gov/compliance/provider-compliance-training/files/starkandakscharthandout508.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>Resources for Medicare Beneficiaries
+      		<ul>
+      			<li>
+      				<p>1-800-MEDICARE (1-800-633-4227)/TTY 1-877-486-2048 <br><a href="https://www.medicare.gov/" class="inline internal" tabindex="-1">https://www.medicare.gov/</a></p>
+      				<!--<p>“Resources for Medicare Beneficiaries” Publication <br><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/ICN905183.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/ICN905183.html</a></p>-->
+      			</li>
+      		</ul>
+      	</li>
+      	<li>Skilled Nursing Facility Prospective Payment System Booklet
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243671.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243671.html</a></li>
+      		</ul>
+      	</li>
+      	<li>Swing Bed Services Fact Sheet
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243409.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243409.html</a></li>
+      		</ul>
+      	</li>
+      	<li>“Under Arrangement” Best Practices and Sample Forms
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/SNFPPS/BestPractices.html" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/SNFPPS/BestPractices.html</a></li>
+      		</ul>
+      	</li>
+      </ul>
+    </div>
+    
+    <div class="container resource-content" data-page-number="Reference" id="AIDS">
+			<h2>JOB AIDS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Job Aids List"></a></span></h2>
+      
+      <p>The job aids provide additional information relating to this course.</p>
+      
+      <ul>
+      	<!-- Replace '0XX' with proper course number -->
+      	<li><a href="../013-resources/013JobAidA.html" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid A – Common SNF Documentation Errors</a></li>
+        <li><a href="../013-resources/013JobAidB.pdf" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid B – Determining Consolidated Billing for Institutional Services</a></li>
+        <li><a href="../013-resources/013JobAidC.pdf" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid C – Determining Consolidated Billing for Professional Services</a></li>
+        <li><a href="../013-resources/013JobAidD.html" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid D – SNF Consolidated Billing Parts A and B Code Files</a></li>
+        <li><a href="../013-resources/013JobAidE.html" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid E – Frequently Asked Questions about SNF Consolidated Billing</a></li>
+      </ul>
+    </div>
+	</aside>
+
+<!-- Core JavaScript -->
+<script src="../000-Main_Template_Files/main-js/WBTnavigation.js"></script>
+<script src="../000-Main_Template_Files/main-js/WBTresources.js"></script>
+<!-- Assessment JavaScript -->
+<script src="../000-Main_Template_Files/main-js/WBTassess.js"></script>
+
+<!-- LESSON SCORM -->
+<script>
+	loadPage();
+</script>
+
+    <!-- ADD PADDING TO LAST ELEMENT BEFORE SIDEBAR, ONLY WHEN WINDOW IS SIZED 700+ -->
+    <script>
+        if ( $(window).width() > 699) {
+            $( 'aside.page-sidebar' ).prev().css( 'padding-bottom', '75px' );
+    }
+        else {
+           $( 'aside.page-sidebar' ).prev().css( 'padding-bottom', '15px' );
+    }   
+    </script>
+    <script>
+    $(window).resize(function() {
+        if( $(this).width() > 699 ) {
+            $( 'aside.page-sidebar' ).prev().css( 'padding-bottom', '75px' );
+        }
+        else {
+           $( 'aside.page-sidebar' ).prev().css( 'padding-bottom', '15px' );
+        }
+    });
+    </script>       
+
+
+</body>
+
+</html>

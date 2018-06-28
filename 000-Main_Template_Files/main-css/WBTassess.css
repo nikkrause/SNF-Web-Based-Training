@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+fieldset {margin-left:30px;}
+fieldset>ol {list-style-type:upper-alpha;}
+fieldset>ol>li {}
+fieldset>ol>li.assess-submit {list-style-type:none; margin:17px 0 0 -45px;}
+
+legend {position:absolute; top:-9999px;}
+label {width:100%; height:auto; cursor:pointer; padding:5px; position:relative; display:block;}
+
+label>input {position:absolute; left:-50px;}
+
+input[type=submit], .reset {background-color:#00529b; border-radius:10px; padding:12px; color:#fff; border:none; font-weight:bold; cursor:pointer;float:none;}
+.reset {pointer-events:all;display:none;}
+input.submitAnswer[disabled] {background-color:#aaa; cursor:default;}
+
+.answered {cursor:default; pointer-events:auto;}
+.answered .more-info>a {pointer-events:all; position:relative;}
+.answered abbr {pointer-events:all;}
+
+.assess-message.hide {display:none !important;}
+.assess-message {position:fixed; z-index:9999; pointer-events:none; background-color:#fff; text-align:center;}
+.assess-message button {height:auto; color:#fff; font-weight:bold; margin:20px auto 0 auto; padding:10px; pointer-events:all; float:none; bottom:50px; display:block; border-radius:10px;}
+.assess-message-curtain {position:fixed; top:0px; left:0px; z-index:-1; width:100vw; height:100vh; background-color:rgba(255,255,255,0.7); pointer-events:all; cursor:default;}
+
+.right {border:1px solid #085300; color:#085300; border-radius:6px; height:auto; margin:5px 0;}
+.right>div {display:block; padding:5px 0 0 0;}
+.wrong {border:1px solid #AD0002; color:#AD0002; border-radius:6px; height:auto; margin:5px 0;}
+.wrong>div {display:block; padding:5px 0 0 0;}
+
+.scoreboard {padding:10px; background-color:#ddd; border-radius:10px; font-size:90%; display:block;}
+.scoreboard-final {background-color:#fff; color:#f00; border:1px #f00 solid;}
+.passed {color:#007602 !important; border-color:#007602;}
+#FINAL_PERCENT1::after {content:'\0025';}
+#PASSED, #FAILED, #REPASS_PASS, #REPASS_FAIL {display:none;}
+
+#REVIEW {background-color:#fff;}
+#REVIEW>div {padding:50px; height:100%; overflow:auto; position:absolute;}
+#REVIEW>div>div {margin:50px 0 0 0;}
+#REVIEW h2>span, #REVIEW .bold, #REVIEW input, #REVIEW .more-info, #REVIEW label>span {display:none;}
+#REVIEW fieldset {margin-left:0;}
+#REVIEW fieldset .bold {display:block;}
+#REVIEW fieldset .wrong .bold {display:none;}
+#REVIEW .assess-message.hide {display:block !important; position:relative; width:100%; height:auto; left:0px; top:0px; padding:0 !important; margin:5px 0 0 0; text-align:left; box-shadow:none;}
+#REVIEW .assess-message-curtain, #REVIEW .assess-message.hide>button  {display: none !important;}
+#REVIEW #PRINT_SCORE {font-weight:bold; font-size:160%; color:#f00;}
+#PRINT_SCORE.passed #FINAL_PERCENT4::after, #PRINT_SCORE.failed #FINAL_PERCENT4::after, #PRINT_SCORE.re-passed #FINAL_PERCENT4::after {content:'\0025 '}
+#PRINT_SCORE.passed::after {content:' (PASSED)'}
+#PRINT_SCORE.re-passed::after {content:' (PREVIOUS PASSING SCORE RETAINED)'}
+#PRINT_SCORE.failed::after {content:' (NOT PASSED)'}
+
+@viewport {
+	width: device-width;
+}
+
+
+
+@media (min-width:0px) {
+	.scoreboard {position:relative; right:auto; top:10px;}
+	.assess-message {width:100vw; height:100vh; top:0vh; left:0vw; box-shadow:none; border-radius:0; padding:20px !important;}
+	input[type=submit], .reset {font-size:12px; margin-bottom:5px;}
+	.reset {float:none;}
+}
+
+
+
+@media (min-width:700px) {
+	.scoreboard {position:absolute; right:0px; top:-10px;}
+	.assess-message {width:70vw; height:auto; top:15vh; left:15vw; box-shadow:0px 0px 10px #333; border-radius:10px; padding:30px !important;}
+	input[type=submit], .reset {font-size:14px;}
+	.reset {float:right;}
+	#POST #PAGE_12 h2 {padding-right:35%;}
+}
+
+
+
+@media (min-width:1000px) {
+	.assess-message {width:50vw; top:25vh; left:25vw; padding:50px !important;}
+	input[type=submit], .reset {font-size:15px;}
+}

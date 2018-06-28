@@ -1,0 +1,1477 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="013-SNF_CB:032018">
+<title>SNF Consolidated Billing</title>
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	LESSON 3
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	All files starting with 000-Main are template files. Do not edit these for individual 
+	courses (except for 'KEY' and 'WHY'.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<!-- Core CSS -->
+<link href="../000-Main_Template_Files/main-css/WBTprint.css" rel="stylesheet" type="text/css">
+<link href="../000-Main_Template_Files/main-css/WBTtemplate.css" rel="stylesheet" type="text/css">
+<link href="../000-Main_Template_Files/main-css/WBTnavigation.css" rel="stylesheet" type="text/css">
+<link href="../000-Main_Template_Files/main-css/WBTresources.css" rel="stylesheet" type="text/css">
+<!-- Title Page CSS 
+<link href="../000-Main_Template_Files/main-css/WBTtitle.css" rel="stylesheet" type="text/css">-->
+<!-- Assessment Page CSS -->
+<link href="../000-Main_Template_Files/main-css/WBTassess.css" rel="stylesheet" type="text/css">
+
+<!-- JQUERY JavaScript -->
+<script src="../000-Main_Template_Files/main-js/jquery/jquery.min.js"></script>
+<!-- SCORM JavaScript -->
+<script src="../000-Main_Template_Files/main-js/APIWrapper.js"></script> 
+<script src="../000-Main_Template_Files/main-js/SCOFunctions.js"></script>
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	Add course specific CSS and Javascript below, or at the end of the body if needed.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<!-- 013 CSS -->
+<!-- 013 Javascript -->
+
+<!-- Backwards IE -->
+<!--[if lt IE 9]>
+	<link href="../000-Main_Template_Files/main-css/IE9.css" rel="stylesheet" type="text/css">
+	<script src="../000-Main_Template_Files/main-js/jquery/jquery1.10.2.min.js"></script>
+<![endif]-->
+<script>
+	for(var e,l='article aside figure figcaption footer header nav main section time'.split(' ');e=l.pop();document.createElement(e));
+</script>
+
+</head>
+
+<body id="LESSON3" onUnload="return unloadPage()">
+	
+	<header data-version="" class="fixed-top">
+		<div class="max-padded">
+			<h1>SNF Consolidated Billing</h1>
+		</div>
+	</header>
+	
+	<nav class="navbar top-nav">
+		<!--<div class="container max-padded">-->
+		
+			<div class="lesson-title bold">
+				<span>Lesson 3: Services Excluded from Part A SNF Consolidated Billing</span>
+			</div>
+			<div class="nav-set head-nav no-print">
+				<button type="button" class="btn-main" id="NAV_REFERENCE" onClick="openResources('REFERENCE')" tabindex="-1">Reference</button>
+				<button type="button" class="btn-main" id="NAV_HELP" onClick="openResources('HELP')" tabindex="-1">Help</button>
+				
+				<!-- Close Resources -->
+				<button type="button" class="btn-main close btn-cta" id="NAV_CLOSE_REFERENCE" onClick="closeResources()" tabindex="-1">Close Reference</button>
+				<button type="button" class="btn-main close btn-cta" id="NAV_CLOSE_HELP" onClick="closeResources()" tabindex="-1">Close Help</button>
+				<button type="button" class="btn-main close btn-cta" id="NAV_CLOSE_REVIEW" onClick="closeResources()" tabindex="-1">Close<br>Review</button>
+				
+				<button type="button" class="btn-main" id="NAV_EXIT" tabindex="-1" onClick="doQuit()">Exit</button>
+			</div>
+			
+		<!--</div>-->
+	</nav>
+	
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	Begin Main Lesson Content 
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<div class="page-wrapper">
+		<main class="container content">
+		
+			<!-- ####### 1 ####### -->
+			<div class="container page-content live" id="PAGE_1" data-page-number="1" data-sequence="start" tabindex="-1">
+				<h2>Lesson 3: Introduction and Learning Objectives</h2>
+				
+				<p>In this lesson, you’ll learn about excluded Skilled Nursing Facility (SNF) Consolidated Billing (CB) services. It should take about 20 minutes to complete.</p>
+
+				<p>After completing this lesson, you should be able to correctly:</p>
+
+				<ul>
+					<li>Recognize excluded Part A <abbr title="Skilled Nursing Facility">SNF</abbr> <abbr title="Consolidated Billing">CB</abbr> services</li>
+				</ul>
+
+				<div class="nav-set no-print">
+					<button class="btn-body btn-cta print-lesson">Print a copy of this lesson</button>
+				</div>
+			</div>
+			
+			<!-- ####### 2 ####### -->
+			<div class="container page-content" id="PAGE_2" data-page-number="2" tabindex="-1">
+				<h2>Services Excluded from Part A SNF Consolidated Billing</h2>
+					
+				<p>Services not included in the SNF Prospective Payment System (PPS) and Part A CB requirements are called “excluded” services. Excluded SNF CB services means these services are separately reimbursable under Medicare Part B rather than bundled into the SNF’s comprehensive <abbr title="Prospective Payment System">PPS</abbr> per diem payment for the covered Part A stay.</p>
+				
+				<p>Don’t get confused! The term “excluded” usually means services excluded from Medicare coverage, but that is not the case when referring to SNF CB.</p>
+
+				<p class="bold">Now, let’s review what you’ve learned about what “excluded” means in the context of SNF CB.</p>
+			</div>
+
+			<!-- ####### 3 ####### -->
+			<div class="container page-content page-question" id="PAGE_3" data-page-number="3" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">If a service is “excluded” under the Skilled Nursing Facility Prospective Payment System or Medicare Part A Consolidated Billing, this means that it is excluded from Medicare coverage.</p>
+
+				<form name="L3_1" id="L3_1" action="#" method="get" onSubmit="checkAnswer('L3_1');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L3_1" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L3_1" value="A" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L3_1" class="bbb xxx">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L3_1" value="B" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_L3_1" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L3_1" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+
+							<li>
+								<label for="OPTIOND_L3_1" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_L3_1" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 4 ####### -->
+			<div class="container page-content" id="PAGE_4" data-page-number="4" tabindex="-1">
+				<h2>Part A (Institutional) or Part B (Professional) Exclusions</h2>
+    
+				<p>You can identify SNF CB-excluded services as institutional (bill to Medicare Part A) or professional (bill to Medicare Part B). The Centers for Medicare &amp; Medicaid Services (CMS) annually updates SNF CB files and displays the specifically included and excluded services by billing codes.</p>
+
+				<div class="container page-element">
+					<table>
+						<caption>Part A or Part B Exclusions</caption>
+						<thead>
+							<tr>
+								<th>Difference</th>
+								<th>Part A (Institutional) Claims</th>
+								<th>Part B (Professional) Claims</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="colHead">Difference: </span>How are they identified?</td>
+								<td><span class="colHead">Part A (Institutional) Claims: </span><abbr title="Centers for Medicare &amp; Medicaid Services">CMS</abbr> regularly updates files that providers and suppliers can use to determine if services are included or excluded under SNF CB.</td>
+								<td><span class="colHead">Part B (Professional) Claims: </span>CMS regularly updates files that providers and suppliers can use to determine if services are included or excluded under SNF CB.</td>
+							</tr>
+							<tr>
+								<td><span class="colHead">Difference: </span>How are they grouped in the files?</td>
+								<td><span class="colHead">Part A (Institutional) Claims: </span>By major category</td>
+								<td><span class="colHead">Part B (Professional) Claims: </span>By type of service (for example, physician or ambulance)</td>
+							</tr>
+							<tr>
+								<td><span class="colHead">Difference: </span>How do I access the files?</td>
+								<td><span class="colHead">Part A (Institutional) Claims: </span><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FI_File_Explanation.html" class="inline" target="_blank" rel="noopener" tabindex="-1">FI File Explanation webpage</a></td>
+								<td><span class="colHead">Part B (Professional) Claims: </span><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FileExplanation.html" class="inline" target="_blank" rel="noopener" tabindex="-1">Part B Medicare Administrative Contractor (MAC) File Explanation webpage</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- ####### 5 ####### -->
+			<div class="container page-content" id="PAGE_5" data-page-number="5" tabindex="-1">
+				<h2>Part A Files: Major Categories</h2>
+
+				<p>The annual SNF Part A update file contains a comprehensive list of codes excluded from Part A SNF CB organized by major category. The five major categories are:</p>
+
+				<ol class="roman">
+					<li>Excluded Services Beyond the Scope of a SNF</li>
+					<li>Excluded Services when Rendered to Specific Beneficiaries</li>
+					<li>Excluded Services Rendered by Certified Providers</li>
+					<li>Excluded Preventive and Screening Services</li>
+					<li>Included Part B Therapy Services in SNF CB*</li>
+				</ol>
+	
+        <div class="note">
+					<p class="bold"><span class="no-wrap">*&nbsp;&nbsp;</span></p>
+					<p>Unlike the others, this major category contains services included in Part A and Part B SNF CB rather than services excluded from Part A SNF CB.</p>
+				</div>
+				
+				<p>The <a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FI_File_Explanation.html" class="inline" target="_blank" rel="noopener" tabindex="-1">FI File Explanation webpage</a> has more information including the major category files. The <a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/Downloads/14MajorCatExpl.pdf" class="inline" target="_blank" rel="noopener" tabindex="-1">General Explanation of the Major Categories for Skilled Nursing Facility (SNF) Consolidated Billing document</a> includes a synopsis of the major categories. The following pages discuss each major category separately.</p>
+			</div>
+			
+			<!-- ####### 6 ####### -->
+			<div class="container page-content" id="PAGE_6" data-page-number="6" tabindex="-1">
+				<!-- <div class="page-mainbar">
+					<aside class="page-sidebar align-center no-background no-print">
+						<img src="../013-images/013_L3_Page6.gif" alt="">
+					</aside> -->
+					
+					<h2>Major Category I: Excluded Services Beyond the Scope of a SNF</h2>
+    
+					<p>Certain outpatient services are excluded from SNF CB only when provided in a hospital or Critical Access Hospital (CAH). Major Category I breaks down into the following subcategories:</p>
+
+					<ol class="alpha">
+						<li>Computerized axial tomography (CT) scans</li>
+						<li>Cardiac catheterization</li>
+						<li>Magnetic resonance imaging (MRI)</li>
+						<li>Radiation therapy</li>
+						<li>Angiography, lymphatic, venous, and related procedures</li>
+						<li>Outpatient surgery and related procedures (lists inclusions rather than exclusions)*</li>
+						<li>Emergency services</li>
+						<li>Ambulance transportation for the above listed services and Category II. A.</li>
+						<li>Additional excluded surgery codes</li>
+					</ol>
+
+					<div class="note">
+						<p class="bold"><span class="no-wrap">*&nbsp;&nbsp;</span></p>
+						<p>The minor procedures listed in Major Category I.F., while technically considered “surgery,” can nevertheless be safely performed at bedside in the SNF itself and, therefore, remain subject to SNF CB.</p>
+					</div>
+				<!-- </div> -->
+			</div>
+
+			<!-- ####### 7 ####### -->
+			<div class="container page-content" id="PAGE_7" data-page-number="7" tabindex="-1">
+				<h2>Major Category II: Excluded Services when Rendered to Specific Beneficiaries</h2>
+    
+				<p>Major Category II includes End-Stage Renal Disease (ESRD) and hospice services provided to beneficiaries with <abbr title="End-Stage Renal Disease">ESRD</abbr> or beneficiaries who elected hospice. Major Category II breaks down into the following subcategories:</p>
+				
+				<ol>
+					<li>Dialysis, Erythropoietin (EPO), Aranesp&reg;, and other dialysis-related services for ESRD beneficiaries are excluded from SNF CB for:
+						<ul>
+							<li>Services provided in a Renal Dialysis Facility (RDF), including medically necessary ambulance services to and from the <abbr title="Renal Dialysis Facility">RDF</abbr></li>
+							<li>Home dialysis services when the SNF constitutes the beneficiary’s home</li>
+							<li><abbr title="Erythropoietin">EPO</abbr> or Aranesp used along with dialysis and given by the RDF</li>
+						</ul>
+					</li>
+					<li>Hospice services for terminal conditions of beneficiaries who elect hospice are excluded from CB. Hospice services for terminal conditions are identified with Types of Bill (TOBs) 81X or 82X. For beneficiaries who elect hospice, SNF PPS and CB include services that are unrelated to the beneficiary’s terminal condition.</li>
+				</ol>
+
+				<p class="bold">Now, let’s review what you’ve learned about Major Category II.</p>
+			</div>
+
+			<!-- ####### 8 ####### -->
+			<div class="container page-content page-question" id="PAGE_8" data-page-number="8" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">For a Skilled Nursing Facility (SNF) resident who has elected hospice, services related to the resident’s terminal condition are excluded from Consolidated Billing for Medicare Part A.</p>
+
+				<form name="L3_2" id="L3_2" action="#" method="get" onSubmit="checkAnswer('L3_2');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L3_2" class="aaa xxx">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L3_2" value="A" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L3_2" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L3_2" value="B" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_L3_2" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L3_2" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+
+							<li>
+								<label for="OPTIOND_L3_2" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_L3_2" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+
+			<!-- ####### 9 ####### -->
+			<div class="container page-content" id="PAGE_9" data-page-number="9" tabindex="-1">
+				<!-- <div class="page-mainbar">
+					<aside class="page-sidebar align-center no-background no-print">
+						<img src="../013-images/013_L3_Page9.gif" alt="">
+					</aside> -->
+					
+					<h2>Major Category III: Excluded Services Rendered by Certified Providers</h2>
+    
+					<p>Major Category III includes services excluded only if rendered by any Medicare provider other than a SNF. Major Category III breaks down into the following subcategories:</p>
+
+					<ol class="alpha">
+						<li>Certain chemotherapy drugs</li>
+						<li>Chemotherapy administration</li>
+						<li>Radioisotopes and their administration</li>
+						<li>Customized prosthetic devices</li>
+					</ol>
+
+					<p>If a SNF provides the listed services, they are included in the SNF PPS and CB.</p>
+				<!-- </div>  -->
+			</div>
+			
+			<!-- ####### 10 ####### -->
+			<div class="container page-content add-side" id="PAGE_10" data-page-number="10" tabindex="-1">
+				<div class="page-mainbar">
+					<h2>Major Category IV: Excluded Preventive and Screening Services</h2>
+
+					<p>Preventive and screening services are excluded from the Part A payment made under the SNF PPS but are subject to SNF CB. As such, they are separately payable under Medicare Part B, but only to the SNF. The SNF must bill the services listed on the next page for beneficiaries in a covered Part A stay with Part B eligibility on <abbr title="Type of Bill">TOB</abbr> 22X.</p>
+					
+					<aside class="page-sidebar">
+						<a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/clm104c18.pdf" class="sub-cta" target="_blank" rel="noopener" tabindex="-1"><h3>MEDICARE CLAIMS PROCESSING MANUAL – <span class="no-wrap">CHAPTER 18</span></h3></a>
+						
+						<p>You can find guidance about coverage and billing for preventive and screening services in Chapter 18.</p>
+					</aside>
+				</div>
+			</div>
+			
+			<!-- ####### 11 ####### -->
+			<div class="container page-content add-side" id="PAGE_11" data-page-number="11" tabindex="-1">
+				<div class="page-mainbar">
+					<h2>Major Category IV: Excluded Preventive and Screening Services (continued)</h2>
+
+					<ol class="alpha">
+						<li>Mammography</li>
+						<li>Vaccines (pneumococcal, seasonal influenza, or hepatitis B)</li>
+						<li>Vaccine administration</li>
+						<li>Screening Pap smear and pelvic exam</li>
+						<li>Colorectal screening services</li>
+						<li>Prostate cancer screening</li>
+						<li>Glaucoma screening</li>
+						<li>Diabetic screening</li>
+						<li>Cardiovascular screening</li>
+						<li>Initial Preventive Physical Exam (IPPE)</li>
+						<li>Abdominal Aortic Aneurysms (AAA) screening</li>
+					</ol>
+					
+					<aside class="page-sidebar">
+						<h3>Medicare Preventive Service Coverage and Billing Information</h3>
+						
+						<p>Learn about codes, who is covered, frequency, and what the beneficiary pays in the <a href="https://www.cms.gov/Medicare/Prevention/PrevntionGenInfo/medicare-preventive-services/MPS-QuickReferenceChart-1.html" class="inline" target="_blank" rel="noopener" tabindex="-1">Medicare Learning Network&reg; (MLN) Preventive Services Educational Tool</a>.</p>
+					</aside>
+				</div>
+			</div>
+			
+			<!-- ####### 12 ####### -->
+			<div class="container page-content add-side" id="PAGE_12" data-page-number="12" tabindex="-1">
+				<div class="page-mainbar">
+					<h2>Major Category V: Included Part B Therapy Services in SNF CB</h2>
+
+					<p>The SNF PPS and CB include therapy services for residents in a covered Part A stay. The SNF also must bill these services for its Part B residents (those residents who are in noncovered Part B stays). Physical Therapy (PT), Occupational Therapy (OT), and/or Speech-Language Pathology (SLP) services, whether furnished by (or under the supervision of) a physician or other health care professional, are included in the SNF PPS and CB requirements.</p>
+					
+					<p class="bold">Now, let’s review what you’ve learned about the major categories.</p>
+					
+					<aside class="page-sidebar">
+						<a href="../013-resources/013JobAidB.pdf" class="sub-cta-singleline internal" target="_blank" rel="noopener" tabindex="-1"><h3>OPEN JOB AID B</h3></a>
+						
+						<p>Job Aid B, “Determining Consolidated Billing for Institutional Services,” helps you identify if an institutional service is included in CB via a helpful flow chart.</p>
+					</aside>
+				</div>
+			</div>
+
+			<!-- ####### 13 ####### -->
+			<div class="container page-content page-question" id="PAGE_13" data-page-number="13" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the correct answer to fill in the blank.</p>
+
+				<p class="question">_____ for Skilled Nursing Facility excluded services are grouped by major category.</p>
+
+				<form name="L3_3" id="L3_3" action="#" method="get" onSubmit="checkAnswer('L3_3');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L3_3" class="aaa xxx">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L3_3" value="A" onClick="selection('A')" tabindex="-1"> 
+									Medicare Part A (institutional) claims
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L3_3" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L3_3" value="B" onClick="selection('B')" tabindex="-1"> 
+									Medicare Part B (professional) claims
+								</label>
+							</li>
+
+							<!--<li>
+								<label for="OPTIONC_L3_3" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L3_3" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+
+							<li>
+								<label for="OPTIOND_L3_3" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_L3_3" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 14 ####### -->
+			<div class="container page-content page-question" id="PAGE_14" data-page-number="14" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">Major Category IV: Excluded Preventive and Screening Services lists those services that are excluded from payment by Medicare.</p>
+
+				<form name="L3_4" id="L3_4" action="#" method="get" onSubmit="checkAnswer('L3_4');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L3_4" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L3_4" value="A" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L3_4" class="bbb xxx">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L3_4" value="B" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+
+							<!--<li>
+								<label for="OPTIONC_L3_4" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L3_4" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+
+							<li>
+								<label for="OPTIOND_L3_4" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_L3_4" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 15 ####### -->
+			<div class="container page-content" id="PAGE_15" data-page-number="15" tabindex="-1">
+				<!-- <div class="page-mainbar">
+					<aside class="page-sidebar align-center no-background no-print">
+						<img src="../013-images/013_L3_Page15.gif" alt="">
+					</aside> -->
+					
+					<h2>Part B Files</h2>
+					
+					<p>The SNF annual Part B update file contains a comprehensive list of codes for Part B services to a beneficiary in a covered or noncovered Part B stay. These services are excluded from SNF PPS and Medicare Part A CB. The supplier or practitioner bills the services directly to the <abbr title="Medicare Administrative Contractor">MAC</abbr>. The four Part B files include:</p>
+
+					<ol>
+						<li>Part A Stay Physician Services: Physician Professional Services (Other than Interpretation of Diagnostic Tests)</li>
+						<li>Part A Stay Professional Components of Services to be Submitted with a -26 Modifier: Physician Interpretation of Diagnostic Tests</li>
+						<li>Part A Stay—Ambulance</li>
+						<li>Part B Noncovered Stay Only—Therapy Services: Physical, Occupational, and Speech Therapy</li>
+					</ol>
+					
+					<p class="page-disclaimer">CPT only copyright 2018 American Medical Association. All rights reserved.</p>
+				<!-- </div> -->
+			</div>
+			
+			<!-- ####### 16 ####### -->
+			<div class="container page-content" id="PAGE_16" data-page-number="16" tabindex="-1">
+				<h2>Part B Files (continued)</h2>
+					
+				<p>The first three files pertain to beneficiary services in a covered Part A stay. The fourth file is for beneficiaries in a noncovered Part B stay.</p>
+
+				<p>The first two files list codes that physicians, non-physician practitioners (NPPs), and suppliers (other than ambulance suppliers) can bill separately to the MAC. If neither file lists the code for the service, the service is subject to SNF CB and the physician, <abbr title="Non-Physician Practitioners">NPPs</abbr>, or supplier must look to the SNF for service payment. The MAC will not pay for the service.</p>
+				
+				<p>The <a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/2017-Part-B-MAC-Update.html" class="inline" target="_blank" rel="noopener" tabindex="-1">Part B MAC File Explanation webpage</a> has more information and the Part B files.</p>
+
+				<p>The following pages discuss each file separately.</p>
+			</div>
+			
+			<!-- ####### 17 ####### -->
+			<div class="container page-content" id="PAGE_17" data-page-number="17" tabindex="-1">
+				<!-- <div class="page-mainbar">
+					<aside class="page-sidebar align-center no-background no-print">
+						<img src="../013-images/013_L3_Page17.gif" alt="">
+					</aside> -->
+					
+					<h2>File 1: Part A Stay Physician Services</h2>
+					
+					<p>The SNF PPS and CB excludes professional services. The following providers may bill these services directly to the MAC:</p>
+
+					<ul>
+						<li>Certified nurse-midwife</li>
+						<li>Certified registered nurse anesthetist</li>
+						<li>Nurse practitioner and clinical nurse specialist working with a physician</li>
+						<li>Physician services furnished personally by a physician</li>
+						<li>Physician assistant working under a physician’s supervision</li>
+						<li>Qualified psychologist</li>
+					</ul>
+				<!-- </div> -->
+			</div>
+			
+			<!-- ####### 18 ####### -->
+			<div class="container page-content add-side" id="PAGE_18" data-page-number="18" tabindex="-1">
+				<div class="page-mainbar">
+					<h2>Nonexcluded (Included) “Incident To” Services</h2>
+					
+					<p>While the SNF PPS and CB exclude the professional services that a physician performs personally, the exclusion does not apply to services that are furnished by someone else as an “incident to” the physician’s professional service. These “incident to” services furnished by others to SNF residents are subject to CB. The SNF must bill the “incident to” services.</p>
+
+					<p>Certain NPPs, such as physician assistants, nurse practitioners, clinical nurse specialists, nurse-midwives, or clinical psychologists, can also order and supervise “incident to” services. These services are subject to SNF CB in the same manner as physician-supervised “incident to” services.</p>
+
+					<aside class="page-sidebar">
+						<a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/bp102c15.pdf" class="sub-cta" target="_blank" rel="noopener" tabindex="-1"><h3>MEDICARE BENEFIT POLICY MANUAL – <span class="no-wrap">CHAPTER 15</span></h3></a>
+						
+						<p>You can find all “incident to” requirements in Chapter 15, <span class="no-wrap">Section 60.</span></p>
+					</aside>
+				</div>
+			</div>
+			
+			<!-- ####### 19 ####### -->
+			<div class="container page-content" id="PAGE_19" data-page-number="19" tabindex="-1">
+				<div class="page-mainbar">
+					<img src="../013-images/print/013_L3_Page19_Print.jpg" class="print-float-right print-image print-only" alt="">
+					
+					<h2>File 2: Professional Component of Diagnostic Tests</h2>
+					
+					<p>Many diagnostic tests consist of a separate technical component (representing the test itself) and professional component (representing the physician’s interpretation of the test results). This physician service exclusion applies only to the professional component of the diagnostic test, which the provider bills directly to the MAC. You must submit the codes for professional services in File 2 with a Current Procedural Terminology (CPT) modifier -26.</p>
+
+					<p>In contrast, the technical component is subject to CB. The SNF includes the technical component of the diagnostic test on the bill to the MAC for the covered Part A stay. The comprehensive PPS per diem payment the SNF receives includes the payment. The outside provider or supplier must look to the SNF for payment of the technical component of the diagnostic test.</p>
+					
+					<p class="page-disclaimer">CPT only copyright 2018 American Medical Association. All rights reserved.</p>
+
+					<aside class="page-sidebar align-center no-background print-float-right no-print nuke-mobile">
+						<img src="../013-images/013_L3_Page19.png" alt="">
+					</aside>
+				</div>
+			</div>
+			
+			<!-- ####### 20 ####### -->
+			<div class="container page-content add-side" id="PAGE_20" data-page-number="20" tabindex="-1">
+				<div class="page-mainbar">
+					<h2>File 3: Part A Stay—Ambulance Services</h2>
+					
+					<p>Exclude ambulance trips associated with the following services from the SNF PPS and CB:</p>
+
+					<ul>
+						<li>Initial ambulance trip to the SNF for admission</li>
+						<li>Trip home after formal discharge from the SNF without readmission to that or another SNF before the following midnight</li>
+						<li>Trip for an inpatient admission to a Medicare-participating hospital or <abbr title="Critical Access Hospital">CAH</abbr></li>
+						<li>Trip to or from a hospital or CAH for the specific purpose of receiving emergency services or certain other intensive outpatient services excluded from Part A CB</li>
+						<li>Trip to the beneficiary’s home to receive services from a Medicare-participating Home Health Agency under a plan of care</li>
+						<li>Trip to or from an <abbr title="Renal Dialysis Facility">RDF</abbr> for the purpose of receiving Part B dialysis services</li>
+					</ul>
+
+					<aside class="page-sidebar">
+						<p>Read <abbr title="Medicare Learning Network&reg;">MLN</abbr> Matters&reg; Special Edition Article  <a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/se0433.pdf" class="inline" target="_blank" rel="noopener" tabindex="-1">Skilled Nursing Facility Consolidated Billing As It Relates to Ambulance Services</a> for more information on the topic.</p>
+					</aside>
+				</div>
+			</div>
+			
+			<!-- ####### 21 ####### -->
+			<div class="container page-content add-side" id="PAGE_21" data-page-number="21" tabindex="-1">
+				<div class="page-mainbar">
+					<h2>File 4: Part B Noncovered Stay—Therapy Services</h2>
+					
+					<p>The MAC always denies codes for <abbr title="Physical Therapy">PT</abbr>, <abbr title="Occupational Therapy">OT</abbr>, and <abbr title="Speech-Language Pathology">SLP</abbr> provided to Medicare beneficiaries in a noncovered Part B stay when not billed by the SNF itself. Therapy services must be provided and billed under arrangement with the SNF.</p>
+
+					<p class="bold">Now, let’s review what you’ve learned about Part B files and services.</p>
+
+					<aside class="page-sidebar">
+						<a href="../013-resources/013JobAidC.pdf" class="sub-cta-singleline internal" target="_blank" rel="noopener" tabindex="-1"><h3>OPEN JOB AID C</h3></a>
+						
+						<p>Job Aid C, “Determining Consolidated Billing for Professional Services,” helps you identify if a professional service is included in CB via a helpful flow chart.</p>
+												
+					</aside>
+				</div>
+			</div>
+			
+			<!-- ####### 22 ####### -->
+			<div class="container page-content page-question" id="PAGE_22" data-page-number="22" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">“Incident to” services furnished to a Skilled Nursing Facility resident in a covered Part A stay are subject to Consolidated Billing.</p>
+
+				<form name="L3_5" id="L3_5" action="#" method="get" onSubmit="checkAnswer('L3_5');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L3_5" class="aaa xxx">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L3_5" value="A" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L3_5" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L3_5" value="B" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+
+							<!--<li>
+								<label for="OPTIONC_L3_5" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L3_5" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+
+							<li>
+								<label for="OPTIOND_L3_5" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_L3_5" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 23 ####### -->
+			<div class="container page-content page-question" id="PAGE_23" data-page-number="23" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">An ambulance trip from a Skilled Nursing Facility (SNF) to the beneficiary’s house is included in the <abbr title="Skilled Nursing Facility">SNF</abbr> Prospective Payment System and Consolidated Billing if:</p>
+
+				<form name="L3_6" id="L3_6" action="#" method="get" onSubmit="checkAnswer('L3_6');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L3_6" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L3_6" value="A" onClick="selection('A')" tabindex="-1"> 
+									The SNF is within 100 miles of the beneficiary’s house
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L3_6" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L3_6" value="B" onClick="selection('B')" tabindex="-1"> 
+									The beneficiary is readmitted to a SNF within a week of the ambulance trip
+								</label>
+							</li>
+
+							<li>
+								<label for="OPTIONC_L3_6" class="ccc xxx">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L3_6" value="C" onClick="selection('C')" tabindex="-1"> 
+									The beneficiary is readmitted to a SNF before the following midnight and did not receive any services from a Medicare-participating Home Health Agency under a plan of care during the absence from the SNF
+								</label>
+							</li>
+
+							<!--<li>
+								<label for="OPTIOND_L3_6" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_L3_6" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 24 ####### -->
+			<div class="container page-content page-question" id="PAGE_24" data-page-number="24" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">If you are a physician, non-physician practitioner (NPP), or supplier (other than an ambulance supplier) who provided services to a beneficiary in a covered Part A stay and you cannot find a code in File 1 or File 2, you should:</p>
+
+				<form name="L3_7" id="L3_7" action="#" method="get" onSubmit="checkAnswer('L3_7');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L3_7" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L3_7" value="A" onClick="selection('A')" tabindex="-1"> 
+									Bill your Medicare Administrative Contractor (MAC)
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L3_7" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L3_7" value="B" onClick="selection('B')" tabindex="-1"> 
+									Bill the Skilled Nursing Facility’s (SNF’s) <abbr title="Medicare Administrative Contractor">MAC</abbr>
+								</label>
+							</li>
+
+							<li>
+								<label for="OPTIONC_L3_7" class="ccc xxx">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L3_7" value="C" onClick="selection('C')" tabindex="-1"> 
+									Look to the <abbr title="Skilled Nursing Facility">SNF</abbr> for payment
+								</label>
+							</li>
+
+							<!--<li>
+								<label for="OPTIOND_L3_7" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_L3_7" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 25 ####### -->
+			<div class="container page-content" id="PAGE_25" data-page-number="25" tabindex="-1">
+				<h2>Other Exclusions&mdash;Rural Health Clinic and Federally Qualified Health Center Services</h2>
+
+        <p>When a SNF Part A resident receives the services of a physician (or another type of practitioner excluded from SNF CB) from a Rural Health Clinic (RHC) or Federally Qualified Health Center (FQHC), those services are not subject to CB. This allows such services to retain their separate identity as excluded “practitioner” services. These services remain separately billable to the MAC when furnished to a SNF resident during a covered Part A stay, while any other services that the <abbr title="Rural Health Clinic">RHC</abbr> or <abbr title="Federally Qualified Health Center">FQHC</abbr> furnishes to that resident would remain subject to SNF CB.</p>
+
+				<p>For more information, refer to <a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/SE0438.pdf" class="inline" target="_blank" rel="noopener" tabindex="-1">MLN Matters&reg; Special Edition Article about SNF CB for RHCs and FQHCs</a>.</p>
+			</div>
+			
+			<!-- ####### 26 ####### -->
+			<div class="container page-content" id="PAGE_26" data-page-number="26" tabindex="-1">
+				<h2>Other Exclusions—Facility Charges</h2>
+					
+				<p>Medicare excludes physician services from the SNF PPS payment and the CB requirement. When a beneficiary receives clinic services from a hospital-based physician, the physician bills his or her own professional services directly to the MAC and receives reimbursement at the facility rate of the Medicare Physician Fee Schedule (PFS), which does not include overhead expenses.</p>
+				
+				<p>The hospital’s Part B facility charge only represents the associated overhead expenses to its MAC. The hospital’s facility charge does not involve a separate service (such as a diagnostic test) furnished along with the physician’s professional service; rather, it represents the overhead expenses associated with furnishing the professional service itself. Accordingly, hospitals bill for “facility charges” under the physician Evaluation and Management (E&amp;M) codes in the range of 99201–99245 and G0463. Hospital providers, including CAHs, billing for such services identified above must submit the charges on TOBs 13X or 85X, respectively.</p>
+				
+				<p>Review the MLN Matters&reg; Article on <a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3910.pdf" class="inline" target="_blank" rel="noopener" tabindex="-1">SNF CB edits for E&amp;M services billed by hospitals to MACs</a> for more information.</p>
+                
+        <p class="bold">Now, let's review what you've learned about exclusions.</p>
+				
+				<p class="page-disclaimer">CPT only copyright 2018 American Medical Association. All rights reserved.</p>
+			</div>
+			
+			<!-- ####### 27 ####### -->
+			<div class="container page-content page-question" id="PAGE_27" data-page-number="27" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">When splitting a Medicare Part A beneficiary’s diagnostic tests into a technical component and a professional component, both components are subject to Skilled Nursing Facility Consolidated Billing.</p>
+
+				<form name="L3_8" id="L3_8" action="#" method="get" onSubmit="checkAnswer('L3_8');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L3_8" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L3_8" value="A" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L3_8" class="bbb xxx">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L3_8" value="B" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+
+							<!--<li>
+								<label for="OPTIONC_L3_8" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L3_8" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+
+							<li>
+								<label for="OPTIOND_L3_8" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_L3_8" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 28 ####### -->
+			<div class="container page-content page-question" id="PAGE_28" data-page-number="28" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the best answer.</p>
+
+				<p class="question">When a Skilled Nursing Facility Part A resident receives the services of a physician from a _____, those services are not subject to Consolidated Billing.</p>
+
+				<form name="L3_9" id="L3_9" action="#" method="get" onSubmit="checkAnswer('L3_9');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L3_9" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L3_9" value="A" onClick="selection('A')" tabindex="-1"> 
+									Rural Health Clinic
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L3_9" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L3_9" value="B" onClick="selection('B')" tabindex="-1"> 
+									Federally Qualified Health Center
+								</label>
+							</li>
+
+							<li>
+								<label for="OPTIONC_L3_9" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L3_9" value="C" onClick="selection('C')" tabindex="-1"> 
+									Neither A nor B
+								</label>
+							</li>
+
+							<li>
+								<label for="OPTIOND_L3_9" class="ddd xxx">
+									<input name="AnswerInput" type="radio" id="OPTIOND_L3_9" value="D" onClick="selection('D')" tabindex="-1"> 
+									Both A and B
+								</label>
+							</li><!---->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 29 ####### -->
+			<div class="container page-content page-question" id="PAGE_29" data-page-number="29" tabindex="-1">
+				<h2>Review Question</h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">Major Category V and File 4 both tell you how to bill which services?</p>
+
+				<form name="L3_10" id="L3_10" action="#" method="get" onSubmit="checkAnswer('L3_10');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_L3_10" class="aaa xxx">
+									<input name="AnswerInput" type="radio" id="OPTIONA_L3_10" value="A" onClick="selection('A')" tabindex="-1"> 
+									Therapy services
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_L3_10" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_L3_10" value="B" onClick="selection('B')" tabindex="-1"> 
+									Ambulance services
+								</label>
+							</li>
+
+							<li>
+								<label for="OPTIONC_L3_10" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_L3_10" value="C" onClick="selection('C')" tabindex="-1"> 
+									Diagnostic services
+								</label>
+							</li>
+
+							<!--<li>
+								<label for="OPTIOND_L3_10" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_L3_10" value="D" onClick="selection('D')" tabindex="-1"> 
+									Both A and B
+								</label>
+							</li>-->
+
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled><button type="button" class="reset" onClick="resetQuestion()">RESET QUESTION</button>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 30 ####### -->
+			<div class="container page-content" id="PAGE_30" data-page-number="30" data-sequence="end" tabindex="-1">
+				<h2>Lesson 3 Summary</h2>
+				
+				<p>In Lesson 3, you’ve learned:</p>
+
+				<ul>
+					<li>For Skilled Nursing Facility (SNF) Consolidated Billing (CB), “excluded” refers to services separately reimbursable under Medicare Part B rather than bundled into the <abbr title="Skilled Nursing Facility">SNF’s</abbr> comprehensive Prospective Payment System (PPS) per diem payment for the covered Part A stay.</li>
+					<li>The SNF annual Part A update files include five major categories of services:</li>
+				</ul>
+                <ol class="roman">
+				    <li>Excluded Services Beyond the Scope of a SNF</li>
+                    <li>Excluded Services when Rendered to Specific Beneficiaries</li>
+                    <li>Excluded Services Rendered by Certified Providers</li>
+                    <li>Excluded Preventive and Screening Services</li>
+                    <li>Included Part B Therapy Services in SNF <abbr title="Consolidated Billing">CB</abbr></li>
+				</ol>
+			</div>
+			
+			<!-- ####### 31 ####### -->
+			<div class="container page-content" id="PAGE_31" data-page-number="31" data-sequence="end" tabindex="-1">
+				<h2>Lesson 3 Summary (continued)</h2>
+				
+				<ul>
+					<li>The SNF annual Part B update file includes the following four files of services:
+						<ul>
+							<li>Part A Stay—Physician Services: Physician Professional Services (Other than Interpretation of Diagnostic Tests)</li>
+							<li>Part A Stay—Professional Components of Services to be Submitted with a -26 Modifier: Physician Interpretation of Diagnostic Tests</li>
+							<li>Part A Stay—Ambulance</li>
+							<li>Part B Noncovered Stay Only—Therapy Services: Physical, Occupational, and Speech Therapy</li>
+						</ul>
+					</li>
+				</ul>
+
+				<p><a href="../013-resources/013JobAidD.html" class="internal" target="_blank" rel="noopener" tabindex="-1">Job Aid D</a> summarizes the SNF CB Part A and Part B exclusion files.</p>
+				
+				<p class="page-disclaimer">CPT only copyright 2018 American Medical Association. All rights reserved.</p>
+			</div>
+
+			<!-- ####### 32 ####### -->
+			<div class="container page-content" id="PAGE_32" data-page-number="32" data-sequence="end" tabindex="-1">
+				<h2>You’ve Completed Lesson 3: Services Excluded from Part A SNF Consolidated Billing.</h2>
+				
+				<p>Now that you’ve learned about services excluded from SNF PPS and CB during a covered Part A stay, let’s look at SNF CB during a noncovered Part B stay. Lesson 4 provides an overview of services included under SNF CB for beneficiaries in a noncovered Part B stay.</p>
+
+				<p>Select “Lesson 4: SNF Consolidated Billing During a Noncovered Part B Stay” in the course's Main Menu to begin Lesson&nbsp;4.</p>
+				
+				<div class="nav-set no-print">
+					<button class="btn-body btn-cta print-lesson">Print a copy of this lesson</button>
+				</div>
+			</div>
+		
+		</main>
+		
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	End Main Lesson Content 
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		
+		<div class="print disclaimer">
+			<p><span class="bold underline">Statutory and Regulatory Provisions</span><br>Under section 1140 of the Social Security Act (the Act), there are restrictions regarding the use of certain words, letters, emblems and symbols in connection with advertisements, solicitations or other productions. Specifically, the words “Social Security,” “Social Security Account,” “Social Security System,” “Social Security Administration,” “Medicare,” “Health Care Financing Administration,” “Department of Health and Human Services,” “Health and Human Services,” “Supplemental Security Income Program,” or “Medicaid” may not be used in a manner that gives (or could give) the impression that the solicitation, advertisement or other production is endorsed, authorized, affiliated with or approved by the Centers for Medicare and Medicaid Services or by the Department of Health and Human Services.</p>
+
+			<p>Similarly, letters such as “SSA,” “HCFA,”[1] “DHHS,” “HHS,” “SSI,” or other combinations or variations also may not be used to imply approval or involvement by the Department of Health and Human Services or CMS. The same rules apply to the use of symbols and emblems associated with the Department of Health and Human Services or with the Centers for Medicare and Medicaid Services, such as the design of the social security card, the Medicare card, or envelopes or stationary used by either entity. State agencies or political subdivisions of state agencies are exempt from these restrictions.</p>
+
+			<p>Government publications are not subject to copyright law.[2] However, section 1140(a)(2)(B) of the Act prohibits the reproduction, reprinting or distribution of items consisting of forms, applications or other publications of the Social Security Administration or the Department of Health and Human Services for a fee unless specific, written authorization is obtained as prescribed by regulations published by the Commissioner of Social Security or the Secretary of the Department of Health and Human Services.[3] Violations of Section 1140 are punishable by a civil money penalty of $5,000 for each piece of advertisement, solicitation or other production, and up to $25,000 for each instance where a broadcast or telecast is used as the means of transmission for the solicitation or advertisement. See 42 C.F.R. § 1003.102(b)(7). Section 1140 is enforced by the Office of the Inspector General. It should be noted that the use of a disclaimer to inform the public that a given solicitation or advertisement is not endorsed or approved of by any governmental entity does not waive the requirements of section 1140.</p>
+
+			<p><span class="bold underline">Analysis</span><br>CMS information may be used in an advertisement or solicitation if certain words, letters, emblems and symbols are not used in a manner that could conceivably give the impression that the advertisement has been approved, authorized or sanctioned by either the Department of Health and Human Services or CMS. The information CMS makes public on its web site can be incorporated into another web site for without prior authorization if the commercial entity does not charge a fee for reproductions of forms, applications or other government publications. If an individual wishes to copy a CMS publication, form or application verbatim in order to sell it to the public, CMS may refuse to grant written authorization for reproduction. However, it would be permissible for an individual to retrieve information from CMS’ website, incorporate or synthesize that information into his own publication, and sell the publication to the public. Arguably, CMS’ website constitutes a “publication” that cannot simply be copied by an individual who wishes to sell the information.</p>
+
+			<p>[1]We would also expect that the initials “CMS” would be included in this list in light of the agency’s new name.</p>
+			<p>[2]17 U.S.C. § 105.</p>
+			<p>[3]The Department has yet to publish regulations pursuant to subsection 1140(a)(2)(B); however, we believe that CMS has the authority to disapprove reproduction of its publications.</p>
+		</div>
+	</div>
+	
+	<nav class="navbar fixed-bottom z-fix">
+		<div class="container max-padded">
+			<div class="lesson-title CMS-art left">
+				<img src="../000-Main_Template_Files/main-svg/CMS-WBT-footer.svg" class="footer-flourish" alt="">
+			</div>
+			<div class="page-numbers">
+				Page <span id="PAGE_COUNT">X</span> of <span id="PAGE_TOTAL">X</span>
+			</div>
+		</div>
+		
+		<div class="nav-set foot-nav">
+			<button type="button" class="btn-goto" id="NAV_BACK" tabindex="-1">Back</button>
+			<button type="button" class="btn-goto" id="NAV_NEXT" tabindex="0">Next</button>
+			<img src="../000-Main_Template_Files/main-images/WBTfooterNavBG.png" class="no-mobile" alt="">
+			<img src="../000-Main_Template_Files/main-images/WBTfooterNavMobBG.png" class="mobile-only" alt="">
+			<span id="ALERT1">This lesson is complete! &nbsp; <a class="link-button btn-cta dynamic inline" href="javascript:doContinue('completed')" tabindex="-1">Next Lesson</a></span>
+			<span id="ALERT2">Answer the question to continue.</span>
+		</div>
+	</nav>
+	
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	START REFERENCES/HELP
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<aside class="container resource" id="HELP" tabindex="-1">
+		<nav class="navbar">
+			<div class="nav-set resource-nav">
+				<button type="button" class="btn-resource" id="NAV_ACRONYMS" onClick="openResSection('ACRONYMS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-acronyms.png" alt="">
+					<span>ACRONYMS</span>
+				</button>
+				<!-- <button type="button" class="btn-resource" id="NAV_GLOSS_HELP" onClick="openResSection('GLOSS_HELP');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-glossary.png" alt="">
+					<span>GLOSSARY</span>
+				</button> -->
+				<!--<button type="button" class="btn-resource" id="NAV_HYPERLINKS" onClick="openResSection('HYPERLINKS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-sites.png" alt="">
+					<span>HYPERLINKS</span>
+				</button>-->
+				<button type="button" class="btn-resource" id="NAV_NAVIGATION" onClick="openResSection('NAVIGATION');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-nav.png" alt="">
+					<span>NAVIGATION</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_WINDOWS" onClick="openResSection('WINDOWS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-pop.png" alt="">
+					<span>POP-UP WINDOWS</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_PRINTING" onClick="openResSection('PRINTING');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-print.png" alt="">
+					<span>PRINTING</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_SCREEN" onClick="openResSection('SCREEN');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-viewport.png" alt="">
+					<span>SCREEN SETTINGS</span>
+				</button>
+			</div>
+			<button type="button" class="mobile-menu" tabindex="-1"><span></span><span></span><span></span> MENU</button>
+		</nav>
+		
+		<div class="container resource-content default live">
+			<h2 class="align-center">SELECT A TOPIC FOR MORE INFORMATION</h2>
+		</div>
+			
+		<div class="container resource-content" data-page-number="Help" id="ACRONYMS">
+			<h2>ACROMYNS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Acronyms Help"></a></span></h2>
+
+			<p>Throughout this course, some acronyms are dash underlined so you can see the acronym definition after the acronym was defined. You can hold your mouse over acronyms for a reminder of what the acronym means.</p>
+		</div>
+		
+		<div class="container resource-content" data-page-number="Help" id="GLOSS_HELP">
+			<h2>GLOSSARY <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Glossary Help"></a></span></h2>
+
+			<p>Close this window, then select “REFERENCE” at the top of the screen for a link to the Centers for Medicare &amp; Medicaid Services (CMS) Glossary webpage.</p>
+		</div>
+		
+		<!--<div class="container resource-content" data-page-number="Help" id="HYPERLINKS">
+			<h2>HYPERLINKS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Hyperlinks Help"></a></span></h2>
+
+			<p>Certain words in the course are hyperlinks you may select to connect to a webpage or a document. Hyperlinked words appear blue and underlined.</p>
+		</div>-->
+		
+		<div class="container resource-content" data-page-number="Help" id="NAVIGATION">
+			<h2>NAVIGATION <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Navigation Help"></a></span></h2>
+
+			<p>The course navigation is located in the bottom area of the course window. The “BACK” and “NEXT” buttons help navigate a lesson one page at a time. Use these buttons to move forward and backward through a lesson (the “BACK” button is not available in the Post-Assessment).</p>
+      
+      <p>Use the “EXIT” button in any lesson to save your progress and exit the course. If you need to exit the course prior to completion, always use the “EXIT” button rather than the “X” button in the upper right-hand (Microsoft&reg; Windows&reg;) or left-hand (Apple&reg; OS&reg;) corner of the window. If you exit the assessment before reaching the summary page, you’ll lose your progress.</p>
+      
+      <p>The course also contains buttons that open pages outside of the current lesson. The “REFERENCE” button will open a reference section that includes resources for more information.</p>
+      
+      <p>Use the “SUBMIT ANSWER” button to submit your answer to the assessment questions.</p>
+		</div>
+		
+		<div class="container resource-content" data-page-number="Help" id="WINDOWS">
+			<h2>POP-UP WINDOWS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Pop-Up Windows Help"></a></span></h2>
+
+			<p>Pop-up windows appear throughout this course as new browser windows when you select a hyperlink. To close a pop-up window, select the “X” button in the upper right-hand (Microsoft&reg; Windows&reg;) or left-hand (Apple&reg; OS&reg;) corner of the pop-up window.</p>
+		</div>
+		
+		<div class="container resource-content" data-page-number="Help" id="PRINTING">
+			<h2>PRINTING <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Printing Help"></a></span></h2>
+
+			<p>At any point in this course, you may print the current lesson by pressing CTRL-P<!-- or print the current page, lesson, or entire course by selecting the “PRINT” button on each page-->. There is also a "PRINT A COPY OF THIS LESSON" button on the first and last pages of each printable lesson.</p>
+      
+      <div>
+      	<h3>Printing Your Certificate</h3>
+        
+        <p>To print your certificate, you must pass the Post-Assessment and complete the course evaluation.</p>
+        
+        <p class="bold">Follow the <a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNEdWebGuide/Downloads/MLN-WBT-Certificate-INX.pdf" tabindex="-1">certificate instructions</a> for steps on how to access and/or print your certificate.</p>
+      </div> 
+		</div>
+		
+		<!--<div class="container resource-content" data-page-number="Help" id="MOUSE">
+			<h2>USING YOUR MOUSE <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Mouse Help"></a></span></h2>
+      
+      <p>Selecting buttons, hyperlinks, and answer choices activates them. Selecting refers to moving the mouse cursor over the object and pressing the left button on your mouse. Moving the mouse cursor over an underlined text hyperlink will highlight the hyperlink.</p>
+      
+      <p>Hyperlinks in the navigation bar at the top of the page will highlight when you move your mouse over them. When you move the mouse cursor over any hyperlink on the page, the arrow changes to a hand.</p>
+      
+      <p>You can also access all navigation, hyperlinks, and controls by using the tab key.</p>
+    </div>-->
+    
+    <div class="container resource-content" data-page-number="Help" id="SCREEN">
+			<h2>SCREEN SETTINGS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Screen Settings Help"></a></span></h2>
+      
+      <div>
+      	<h3>Zoom</h3>
+        
+      	<p>If you have trouble viewing the course, you may adjust the magnification (zoom) on the page.</p>
+        
+        <ul>
+        	<li>To zoom in, increasing the size of the content, press and hold Ctrl/Command while pressing the +&nbsp;key.</li>
+          <li>To zoom out, decreasing the size of the content, press and hold Ctrl/Command while pressing the -&nbsp;key.</li>
+        </ul>
+      </div>
+      
+      <div>
+      	<h3>Resolution</h3>
+        
+      	<p>If you are still experiencing problems, you may adjust your screen settings. Follow the instructions in the hyperlinks below to adjust your screen settings.</p>
+        
+        <ul>
+        	<!--<li><a href="https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/display_change_screen_resolution.mspx?mfr=true" class="inline" tabindex="-1">Windows XP&reg;</a></li>-->
+          <li><a href="https://support.microsoft.com/en-us/help/14108/windows-7-change-screen-resolution" class="inline" tabindex="-1">Windows 7&reg;</a></li>
+          <li><a href="https://support.microsoft.com/en-us/help/14217/windows-8-get-best-display-on-your-monitor" class="inline" tabindex="-1">Windows 8&reg;</a></li>
+          <li><a href="https://support.microsoft.com/en-us/help/4027860/windows-10-view-display-settings" class="inline" tabindex="-1">Windows 10&reg;</a></li>
+        </ul>
+      </div>
+    </div>
+	</aside>
+	
+	<aside class="container resource" id="REFERENCE" tabindex="-1">
+		<nav class="navbar">
+			<div class="nav-set resource-nav">
+				<button type="button" class="btn-resource" id="NAV_DISCLAIMERS" onClick="openResSection('DISCLAIMERS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-disclaimer.png" alt="">
+					<span>DISCLAIMERS</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_GLOSSARY" onClick="openResSection('GLOSSARY');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-glossary.png" alt="">
+					<span>GLOSSARY</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_SITES" onClick="openResSection('SITES');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-sites.png" alt="">
+					<span>HELPFUL WEBSITES</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_AIDS" onClick="openResSection('AIDS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-aids.png" alt="">
+					<span>JOB AIDS</span>
+				</button>
+			</div>
+			<button type="button" class="mobile-menu" tabindex="-1"><span></span><span></span><span></span> MENU</button>
+		</nav>
+		
+		<div class="container resource-content default live">
+			<h2 class="align-center">SELECT A TOPIC FOR MORE INFORMATION</h2>
+		</div>
+		
+		<div class="container resource-content" data-page-number="Reference" id="DISCLAIMERS">
+			<h2>DISCLAIMERS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Disclaimers"></a></span></h2>
+      
+      <p>This course was current at the time it was published or uploaded onto the web. Medicare policy changes frequently so links to the source documents have been provided within the document for your reference.</p>
+      
+      <p>This course was prepared as a service to the public and is not intended to grant rights or impose obligations. This course may contain references or links to statutes, regulations, or other policy materials. The information provided is only intended to be a general summary. It is not intended to take the place of either the written law or regulations. We encourage readers to review the specific statutes, regulations, and other interpretive materials for a full and accurate statement of their contents.</p>
+      
+      <div>
+      	<h3>The Medicare Learning Network&reg; (MLN)</h3>
+        
+        <p>The Medicare Learning Network&reg;, <abbr title="Medicare Learning Network&reg;">MLN</abbr> Connects&reg;, and MLN Matters&reg; are registered trademarks of the U.S. Department of Health &amp; Human Services (HHS).</p>
+      </div>
+      
+      <div>
+      	<h3>CPT Disclaimer – American Medical Association (AMA) Notice</h3>
+        
+        <p>CPT codes, descriptions and other data only are copyright 2018 American Medical Association. All Rights Reserved. Applicable FARS/HHSAR apply.</p>
+        
+        <p>CPT is a registered trademark of the American Medical Association. Applicable FARS/HHSAR Restrictions Apply to Government Use.</p>
+        
+        <p>Fee schedules, relative value units, conversion factors and/or related components are not assigned by the AMA, are not part of CPT, and the AMA is not recommending their use. The AMA does not directly or indirectly practice medicine or dispense medical services. The AMA assumes no liability for data contained or not contained herein.</p>
+      </div>
+      
+      <div>
+      	<h3>NUBC Disclaimer</h3>
+        
+				<p>Copyright &copy; 2018, the American Hospital Association, Chicago, Illinois. Reproduced with permission. No portion of the AHA copyrighted materials contained within this publication may be copied without the express written consent of the AHA. AHA copyrighted materials including the UB-04 codes and descriptions may not be removed, copied, or utilized within any software, product, service, solution or derivative work without the written consent of the AHA. If an entity wishes to utilize any AHA materials, please contact the AHA at 312-893-6816.</p>
+        
+        <p>Making copies or utilizing the content of the UB-04 Manual, including the codes and/or descriptions, for internal purposes, resale and/or to be used in any product or publication; creating any modified or derivative work of the UB-04 Manual and/or codes and descriptions; and/or making any commercial use of UB-04 Manual or any portion thereof, including the codes and/or descriptions, is only authorized with an express license from the American Hospital Association.</p>
+        
+        <p>To license the electronic data file of UB-04 Data Specifications, contact Tim Carlson at (312) 893-6816 or Laryssa Marshall at (312) 893-6814. You may also contact us at <a href="mailto:ub04@healthforum.com" class="dynamic" tabindex="-1">ub04@healthforum.com</a>.</p>
+        
+        <p>The American Hospital Association (the “AHA”) has not reviewed, and is not responsible for, the completeness or accuracy of any information contained in this material, nor was the AHA or any of its affiliates, involved in the preparation of this material, or the analysis of information provided in the material. The views and/or positions presented in the material do not necessarily represent the views of the AHA. CMS and its products and services are not endorsed by the AHA or any of its affiliates.</p>
+      </div>
+    </div>
+    
+    <div class="container resource-content" data-page-number="Reference" id="GLOSSARY">
+			<h2>GLOSSARY <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Glossary Information"></a></span></h2>
+      
+      <p>For glossary terms, visit the <a href="https://www.cms.gov/apps/glossary" tabindex="-1">Centers for Medicare &amp; Medicaid Services Glossary</a>.</p>
+    </div>
+    
+    <div class="container resource-content" data-page-number="Reference" id="SITES">
+			<h2>HELPFUL WEBSITES <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Helpful Websites"></a></span></h2>
+      
+			<p>The list below provides additional resources related to this course. Please note that all of the following information was accurate at the time this course was created; however, information may change. For more information about SNFs, visit the <a href="https://www.cms.gov/Center/Provider-Type/Skilled-Nursing-Facility-Center.html" class="inline" target="_blank" rel="noopener" tabindex="-1">Skilled Nursing Facility Center webpage</a>.</p>
+      
+      <ul class="bulletless no-indent">
+      	<li>CMS Medicare Learning Network&reg; (MLN)
+      		<ul>
+						<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNGenInfo/index.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNGenInfo/index.html</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS Physician Center
+      		<ul>
+      			<li><a href="https://www.cms.gov/Center/Provider-Type/Physician-Center.html" class="inline internal" tabindex="-1">https://www.cms.gov/Center/Provider-Type/Physician-Center.html</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS Skilled Nursing Facility (SNF) Consolidated Billing (CB)
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS SNF CB Fiscal Intermediary (FI) File Explanation
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FI_File_Explanation.html" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FI_File_Explanation.html</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS SNF CB Major Category Explanation
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/Downloads/14MajorCatExpl.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/Downloads/14MajorCatExpl.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS SNF CB Part B Medicare Administrative Contractor (MAC) File Explanation
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FileExplanation.html" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FileExplanation.html</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS SNF Prospective Payment System (PPS)
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Medicare-Fee-For-Service-Payment/SNFPPS" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Medicare-Fee-For-Service-Payment/SNFPPS</a></li>
+      		</ul>
+      	</li>
+      	<li>Current Procedural Terminology (CPT) books
+      		<ul>
+      			<li><a href="https://commerce.ama-assn.org/store" class="inline internal" tabindex="-1">https://commerce.ama-assn.org/store</a></li>
+      		</ul>
+      	</li>
+      	<li>MDS 3.0
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/NursingHomeQualityInits/NHQIMDS30.html" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/NursingHomeQualityInits/NHQIMDS30.html</a></li>
+      		</ul>
+      	</li>
+      	<li>Medicare Benefit Policy Manual, Chapter 8
+      		<ul>
+      			<li><a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/bp102c08.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/bp102c08.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>Medicare Billing Information for Rural Providers and Suppliers Booklet
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243515.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243515.html</a></li>
+      		</ul>
+      	</li>
+      	<li>Medicare Claims Processing Manual, Chapter 6
+      		<ul>
+      			<li><a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/clm104c06.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/clm104c06.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>Medicare Claims Processing Manual, Chapter 7
+      		<ul>
+      			<li><a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/clm104c07.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/clm104c07.pdf</a></li>
+      		</ul>
+      	</li>
+      	<!--<li>Medicare Learning Network&reg; Electronic Mailing Lists: Keeping Health Care Professionals Informed Fact Sheet
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243324.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243324.html</a></li>
+      		</ul>
+      	</li>-->
+      	<li>MLN Matters&reg; Article, Skilled Nursing Facility (SNF) Consolidated Billing Service Furnished Under an ‘Arrangement’ with an Outside Entity
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3592.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3592.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Article, Changes for Medicare’s Skilled Nursing Facility (SNF) Consolidated Billing (CB) Edits for Evaluation and Management (E&amp;M) Services Billed by Hospitals to Fiscal Intermediaries (FIs)
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3910.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3910.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Article, Manual Updates to Clarify Skilled Nursing Facility (SNF), Inpatient Rehabilitation Facility (IRF), Home Health (HH), and Outpatient (OPT) Coverage Pursuant to Jimmo vs. Sebelius
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM8458.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM8458.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Special Edition Article, Skilled Nursing Facility Consolidated Billing
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/se0431.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/se0431.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Special Edition Article, Medicare Prescription Drug, Improvement, and Modernization Act (MMA) – Skilled Nursing Facility Consolidated Billing and Services of Rural Health Clinics and Federally Qualified Health Centers
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/SE0438.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/SE0438.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Article, ‘Incident to’ Services
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/se0441.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/se0441.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Provider Compliance Website
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/ProviderCompliance.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/ProviderCompliance.html</a></li>
+      		</ul>
+      	</li>
+      	<li>Office of Inspector General Comparison of the Anti-Kickback Statute and Stark Law
+      		<ul>
+      			<li><a href="https://oig.hhs.gov/compliance/provider-compliance-training/files/starkandakscharthandout508.pdf" class="inline internal" tabindex="-1">https://oig.hhs.gov/compliance/provider-compliance-training/files/starkandakscharthandout508.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>Resources for Medicare Beneficiaries
+      		<ul>
+      			<li>
+      				<p>1-800-MEDICARE (1-800-633-4227)/TTY 1-877-486-2048 <br><a href="https://www.medicare.gov/" class="inline internal" tabindex="-1">https://www.medicare.gov/</a></p>
+      				<!--<p>“Resources for Medicare Beneficiaries” Publication <br><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/ICN905183.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/ICN905183.html</a></p>-->
+      			</li>
+      		</ul>
+      	</li>
+      	<li>Skilled Nursing Facility Prospective Payment System Booklet
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243671.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243671.html</a></li>
+      		</ul>
+      	</li>
+      	<li>Swing Bed Services Fact Sheet
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243409.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243409.html</a></li>
+      		</ul>
+      	</li>
+      	<li>“Under Arrangement” Best Practices and Sample Forms
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/SNFPPS/BestPractices.html" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/SNFPPS/BestPractices.html</a></li>
+      		</ul>
+      	</li>
+      </ul>
+    </div>
+    
+    <div class="container resource-content" data-page-number="Reference" id="AIDS">
+			<h2>JOB AIDS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Job Aids List"></a></span></h2>
+      
+      <p>The job aids provide additional information relating to this course.</p>
+      
+      <ul>
+      	<!-- Replace '0XX' with proper course number -->
+      	<li><a href="../013-resources/013JobAidA.html" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid A – Common SNF Documentation Errors</a></li>
+        <li><a href="../013-resources/013JobAidB.pdf" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid B – Determining Consolidated Billing for Institutional Services</a></li>
+        <li><a href="../013-resources/013JobAidC.pdf" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid C – Determining Consolidated Billing for Professional Services</a></li>
+        <li><a href="../013-resources/013JobAidD.html" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid D – SNF Consolidated Billing Parts A and B Code Files</a></li>
+        <li><a href="../013-resources/013JobAidE.html" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid E – Frequently Asked Questions about SNF Consolidated Billing</a></li>
+      </ul>
+    </div>
+	</aside>
+
+<!-- Core JavaScript -->
+<script src="../000-Main_Template_Files/main-js/WBTnavigation.js"></script>
+<script src="../000-Main_Template_Files/main-js/WBTresources.js"></script>
+<!-- Assessment JavaScript -->
+<script src="../000-Main_Template_Files/main-js/WBTassess.js"></script>
+
+<!-- LESSON SCORM -->
+<script>
+	loadPage();
+</script>
+
+    <!-- ADD PADDING TO LAST ELEMENT BEFORE SIDEBAR, ONLY WHEN WINDOW IS SIZED 700+ -->
+    <script>
+        if ( $(window).width() > 699) {
+            $( 'aside.page-sidebar' ).prev().css( 'padding-bottom', '75px' );
+    }
+        else {
+           $( 'aside.page-sidebar' ).prev().css( 'padding-bottom', '15px' );
+    }   
+    </script>
+    <script>
+    $(window).resize(function() {
+        if( $(this).width() > 699 ) {
+            $( 'aside.page-sidebar' ).prev().css( 'padding-bottom', '75px' );
+        }
+        else {
+           $( 'aside.page-sidebar' ).prev().css( 'padding-bottom', '15px' );
+        }
+    });
+    </script>       
+
+
+</body>
+
+</html>

@@ -1,0 +1,1096 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="013-SNF_CB:032018">
+<title>SNF Consolidated Billing</title>
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	POST-ASSESSMENT
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	All files starting with 000-Main are template files. Do not edit these for individual 
+	courses (except for 'KEY' and 'WHY'.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<!-- Core CSS -->
+<link href="../000-Main_Template_Files/main-css/WBTprint.css" rel="stylesheet" type="text/css">
+<link href="../000-Main_Template_Files/main-css/WBTtemplate.css" rel="stylesheet" type="text/css">
+<link href="../000-Main_Template_Files/main-css/WBTnavigation.css" rel="stylesheet" type="text/css">
+<link href="../000-Main_Template_Files/main-css/WBTresources.css" rel="stylesheet" type="text/css">
+<!-- Title Page CSS 
+<link href="../000-Main_Template_Files/main-css/WBTtitle.css" rel="stylesheet" type="text/css">-->
+<!-- Assessment Page CSS -->
+<link href="../000-Main_Template_Files/main-css/WBTassess.css" rel="stylesheet" type="text/css">
+
+<!-- JQUERY JavaScript -->
+<script src="../000-Main_Template_Files/main-js/jquery/jquery.min.js"></script>
+<!-- SCORM JavaScript -->
+<script src="../000-Main_Template_Files/main-js/APIWrapper.js"></script>
+<script src="../000-Main_Template_Files/main-js/SCOFunctions.js"></script>
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	Add course specific CSS and Javascript below, or at the end of the body if needed.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<!-- 013 CSS -->
+<!-- 013 Javascript -->
+
+<!-- Backwards IE -->
+<!--[if lt IE 9]>
+	<link href="../000-Main_Template_Files/main-css/IE9.css" rel="stylesheet" type="text/css">
+	<script src="../000-Main_Template_Files/main-js/jquery/jquery1.10.2.min.js"></script>
+<![endif]-->
+<script>
+	for(var e,l='article aside figure figcaption footer header nav main section time'.split(' ');e=l.pop();document.createElement(e));
+</script>
+
+</head>
+
+<body id="POST" onUnload="return unloadPage()">
+	
+	<header data-version="" class="fixed-top">
+		<div class="max-padded">
+			<h1>SNF Consolidated Billing</h1>
+		</div>
+	</header>
+	
+	<nav class="navbar top-nav">
+		
+			<div class="lesson-title bold">
+				<span>Post-Assessment</span>
+			</div>
+			<div class="nav-set head-nav no-print">
+				<button type="button" class="btn-main" id="NAV_REFERENCE" onClick="openResources('REFERENCE')" tabindex="-1">Reference</button>
+				<button type="button" class="btn-main" id="NAV_HELP" onClick="openResources('HELP')" tabindex="-1">Help</button>
+				
+				<!-- Close Resources -->
+				<button type="button" class="btn-main close btn-cta" id="NAV_CLOSE_REFERENCE" onClick="closeResources()" tabindex="-1">Close Reference</button>
+				<button type="button" class="btn-main close btn-cta" id="NAV_CLOSE_HELP" onClick="closeResources()" tabindex="-1">Close Help</button>
+				<button type="button" class="btn-main close btn-cta" id="NAV_CLOSE_REVIEW" onClick="closeResources()" tabindex="-1">Close<br>Review</button>
+				
+				<button type="button" class="btn-main" id="NAV_EXIT" tabindex="-1" onClick="doQuit()">Exit</button>
+			</div>
+			
+	</nav>
+	
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	Begin Main Lesson Content - EDIT THESE PAGES AS NEEDED
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<div class="page-wrapper">
+		<main class="container content">
+		
+			<!-- ####### 1 ####### -->
+			<div class="container page-content live" id="PAGE_1" data-page-number="1" data-sequence="start" tabindex="-1">
+				<h2>Post-Assessment</h2>
+  
+				<p>This brief Post-Assessment asks 10 questions and should take about 10 minutes. <span class="previous-score bold"></span></p>
+
+				<p>Choose an answer for each question by selecting the button next to your answer. You must select an answer before advancing to the next question. You can only move forward in the Post-Assessment, and you can try each question only once. You may change your answer for a question until you select the “SUBMIT ANSWER” button. After you submit your answer, feedback for the question and the “NEXT” button will appear. Select the “NEXT” button to continue. Do not select the “X” button in the right-hand corner of the window as this will cause you to exit the course without recording your progress.</p> 
+
+				<p>You may print your score when you finish the Post-Assessment. After successfully completing the course, you can print a certificate. Successfully completing the course includes finishing all lessons, scoring 70 percent or higher on the Post-Assessment, and completing the course evaluation. Instructions on printing your certificate are available after you pass the Post-Assessment.</p>
+
+				<p>Select the “NEXT” button to begin the Post-Assessment.</p>
+			</div>
+			
+			<!-- ####### 2 ####### -->
+			<div class="container page-content page-question" id="PAGE_2" data-page-number="2" tabindex="-1">
+				<h2>Question 1 of 10 <span class="scoreboard no-print"><span class="score">0</span> of <span class="total">10</span> correct</span></h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">Under the Skilled Nursing Facility (SNF) Prospective Payment System, Medicare reimburses <abbr title="Skilled Nursing Facility">SNFs</abbr> on a per diem basis for virtually the entire package of services that it furnishes during a resident’s covered Part A stay.</p>
+
+				<form name="POST_1" id="POST_1" action="#" method="get" data-type="true-false" onSubmit="checkAnswer('POST_1');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+						
+						<ol>
+							<li>
+								<label for="OPTIONA_POST_1" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_POST_1" value="A" data-TF="true" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>
+							</li>  
+
+							<li>
+								<label for="OPTIONB_POST_1" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_POST_1" value="B" data-TF="false" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_POST_1" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_POST_1" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+							
+							<li>
+								<label for="OPTIOND_POST_1" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_POST_1" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+							
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled>
+							</li>
+						
+						</ol>
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 3 ####### -->
+			<div class="container page-content page-question" id="PAGE_3" data-page-number="3" tabindex="-1">
+				<h2>Question 2 of 10 <span class="scoreboard no-print"><span class="score">0</span> of <span class="total">10</span> correct</span></h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">Medicare covers up to 100 days of skilled care in a benefit period.</p>
+
+				<form name="POST_2" id="POST_2" action="#" method="get" data-type="true-false" onSubmit="checkAnswer('POST_2');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_POST_2" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_POST_2" value="A" data-TF="true" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_POST_2" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_POST_2" value="B" data-TF="false" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_POST_2" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_POST_2" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+							
+							<li>
+								<label for="OPTIOND_POST_2" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_POST_2" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+							
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 4 ####### -->
+			<div class="container page-content page-question" id="PAGE_4" data-page-number="4" tabindex="-1">
+				<h2>Question 3 of 10 <span class="scoreboard no-print"><span class="score">0</span> of <span class="total">10</span> correct</span></h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">For services subject to Skilled Nursing Facility Consolidated Billing, the outside provider or supplier must look to Medicare for payment.</p>
+
+				<form name="POST_3" id="POST_3" action="#" method="get" data-type="true-false" onSubmit="checkAnswer('POST_3');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_POST_3" class="aaa">
+									<input name="AnswerInput"  type="radio" id="OPTIONA_POST_3" value="A" data-TF="true" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_POST_3" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_POST_3" value="B" data-TF="false" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_POST_3" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_POST_3" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+							
+							<li>
+								<label for="OPTIOND_POST_3" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_POST_3" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+							
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 5 ####### -->
+			<div class="container page-content page-question" id="PAGE_5" data-page-number="5" tabindex="-1">
+				<h2>Question 4 of 10 <span class="scoreboard no-print"><span class="score">0</span> of <span class="total">10</span> correct</span></h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">Except for “excluded” services, a Skilled Nursing Facility (SNF) bills the Medicare Administrative Contractor for all services subject to <abbr title="Skilled Nursing Facility">SNF</abbr> Consolidated Billing.</p>
+
+				<form name="POST_4" id="POST_4" action="#" method="get" data-type="true-false" onSubmit="checkAnswer('POST_4');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_POST_4" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_POST_4" value="A" data-TF="true" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_POST_4" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_POST_4" value="B" data-TF="false" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_POST_4" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_POST_4" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+							
+							<li>
+								<label for="OPTIOND_POST_4" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_POST_4" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+							
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 6 ####### -->
+			<div class="container page-content page-question" id="PAGE_6" data-page-number="6" tabindex="-1">
+				<h2>Question 5 of 10 <span class="scoreboard no-print"><span class="score">0</span> of <span class="total">10</span> correct</span></h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">One of the reasons Congress enacted Consolidated Billing was to reduce duplicate billing.</p>
+
+				<form name="POST_5" id="POST_5" action="#" method="get" data-type="true-false" onSubmit="checkAnswer('POST_5');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_POST_5" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_POST_5" value="A" data-TF="true" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_POST_5" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_POST_5" value="B" data-TF="false" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_POST_5" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_POST_5" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+							
+							<li>
+								<label for="OPTIOND_POST_5" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_POST_5" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+							
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 7 ####### -->
+			<div class="container page-content page-question" id="PAGE_7" data-page-number="7" tabindex="-1">
+				<h2>Question 6 of 10 <span class="scoreboard no-print"><span class="score">0</span> of <span class="total">10</span> correct</span></h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">Hospice services related to the terminal condition are excluded from Consolidated Billing for Medicare Part A residents in a Skilled Nursing Facility.</p>
+
+				<form name="POST_6" id="POST_6" action="#" method="get" data-type="true-false" onSubmit="checkAnswer('POST_6');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_POST_6" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_POST_6" value="A" data-TF="true" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_POST_6" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_POST_6" value="B" data-TF="false" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_POST_6" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_POST_6" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+							
+							<li>
+								<label for="OPTIOND_POST_6" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_POST_6" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+							
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 8 ####### -->
+			<div class="container page-content page-question" id="PAGE_8" data-page-number="8" tabindex="-1">
+				<h2>Question 7 of 10 <span class="scoreboard no-print"><span class="score">0</span> of <span class="total">10</span> correct</span></h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">Physical Therapy, Occupational Therapy, and Speech-Language Pathology services are the only services included in Skilled Nursing Facility (SNF) Consolidated Billing when furnished to a resident of a Medicare-certified <abbr title="Skilled Nursing Facility">SNF</abbr> during a noncovered Part B stay.</p>
+
+				<form name="POST_7" id="POST_7" action="#" method="get" data-type="true-false" onSubmit="checkAnswer('POST_7');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_POST_7" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_POST_7" value="A" data-TF="true" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_POST_7" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_POST_7" value="B" data-TF="false" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_POST_7" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_POST_7" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+							
+							<li>
+								<label for="OPTIOND_POST_7" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_POST_7" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+							
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 9 ####### -->
+			<div class="container page-content page-question" id="PAGE_9" data-page-number="9" tabindex="-1">
+				<h2>Question 8 of 10 <span class="scoreboard no-print"><span class="score">0</span> of <span class="total">10</span> correct</span></h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">For diagnostic tests split into a technical component and a professional component, both components are subject to Skilled Nursing Facility Consolidated Billing.</p>
+
+				<form name="POST_8" id="POST_8" action="#" method="get" data-type="true-false" onSubmit="checkAnswer('POST_8');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_POST_8" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_POST_8" value="A" data-TF="true" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_POST_8" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_POST_8" value="B" data-TF="false" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_POST_8" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_POST_8" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+							
+							<li>
+								<label for="OPTIOND_POST_8" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_POST_8" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+							
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 10 ####### -->
+			<div class="container page-content page-question" id="PAGE_10" data-page-number="10" tabindex="-1">
+				<h2>Question 9 of 10 <span class="scoreboard no-print"><span class="score">0</span> of <span class="total">10</span> correct</span></h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">When an outside provider or supplier furnishes a service subject to Skilled Nursing Facility (SNF) Consolidated Billing (CB), there should be an arrangement in which the outside entity looks to the <abbr title="Skilled Nursing Facility">SNF</abbr> for the portions of its payment subject to <abbr title="Consolidated Billing">CB</abbr>, rather than to the Medicare Administrative Contractor or beneficiary.</p>
+
+				<form name="POST_9" id="POST_9" action="#" method="get" data-type="true-false" onSubmit="checkAnswer('POST_9');return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_POST_9" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_POST_9" value="A" data-TF="true" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_POST_9" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_POST_9" value="B" data-TF="false" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_POST_9" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_POST_9" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+							
+							<li>
+								<label for="OPTIOND_POST_9" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_POST_9" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+							
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 11 ####### -->
+			<div class="container page-content page-question" id="PAGE_11" data-page-number="11" tabindex="-1">
+				<h2>Question 10 of 10 <span class="scoreboard no-print"><span class="score" id="TOTAL_SCORE">0</span> of <span class="total">10</span> correct</span></h2>
+    
+				<p class="bold">Select the correct answer.</p>
+
+				<p class="question">A beneficiary’s status as a Skilled Nursing Facility (SNF) resident, for Consolidated Billing purposes, ends when he or she formally discharges (or otherwise departs) from the <abbr title="Skilled Nursing Facility">SNF</abbr>, even when the beneficiary readmits (or returns) to that or another SNF before the following midnight.</p>
+
+				<form name="POST_10" id="POST_10" action="#" method="get" data-type="true-false" onSubmit="checkAnswer('POST_10');addScore();addReview();return false">
+					<fieldset>
+						<legend>
+							Select one of the following. Once you submit your answer, click the NEXT button to continue.
+						</legend>
+
+						<ol>
+							<li>
+								<label for="OPTIONA_POST_10" class="aaa">
+									<input name="AnswerInput" type="radio" id="OPTIONA_POST_10" value="A" data-TF="true" onClick="selection('A')" tabindex="-1"> 
+									True
+								</label>  
+							</li>
+
+							<li>
+								<label for="OPTIONB_POST_10" class="bbb">
+									<input name="AnswerInput" type="radio" id="OPTIONB_POST_10" value="B" data-TF="false" onClick="selection('B')" tabindex="-1"> 
+									False
+								</label>
+							</li>
+							
+							<!--<li>
+								<label for="OPTIONC_POST_10" class="ccc">
+									<input name="AnswerInput" type="radio" id="OPTIONC_POST_10" value="C" onClick="selection('C')" tabindex="-1"> 
+									Answer C
+								</label>
+							</li>
+							
+							<li>
+								<label for="OPTIOND_POST_10" class="ddd">
+									<input name="AnswerInput" type="radio" id="OPTIOND_POST_10" value="D" onClick="selection('D')" tabindex="-1"> 
+									Answer D
+								</label>
+							</li>-->
+							
+							<li class="assess-submit">
+								<!-- Submit Answer Button -->
+								<input type="submit" class="submitAnswer" name="submitAnswer" value="SUBMIT ANSWER" disabled>
+							</li>
+						</ol>
+							
+					</fieldset>
+				</form>
+			</div>
+			
+			<!-- ####### 12 ####### -->
+			<div class="container page-content no-print" id="PAGE_12" data-page-number="12" data-sequence="end" tabindex="-1">
+				<h2>You’ve completed the SNF Consolidated Billing course. <span class="scoreboard scoreboard-final"><span>FINAL SCORE: </span><span id="FINAL_PERCENT1"></span></span></h2>
+				
+				<div id="PASSED">
+					<p>Congratulations <span class="first-name"></span>! You scored <span id="FINAL_PERCENT2" class="bold"></span> <span class="bold">percent</span> on the Post-Assessment. This course is now complete, and you can print your certificate after completing an evaluation. Your certificate will be available for download or print through your Medicare Learning Network&reg; (MLN) transcript. Select the “View detailed instructions on how to receive your certificate” button for instructions on how to print your certificate.</p>
+					
+					<p>
+						Your certificate is available to print.
+						<a class="link-button btn-cta dynamic no-print" href="javascript:openResources('REVIEW')" tabindex="-1">Review your answers</a>
+						<a class="link-button btn-cta no-print" href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNEdWebGuide/Downloads/MLN-WBT-Certificate-INX.pdf" tabindex="-1">View detailed instructions on how to receive your certificate</a>
+					</p>
+				</div>
+				
+				<div id="REPASS_FAIL">
+					<p><span class="first-name"></span>, you scored <span id="FINAL_PERCENT5" class="bold"></span> <span class="bold">percent</span> on your current attempt of the Post-Assessment. You have previously passed the Post-Assessment with a score of <span class="score-update"></span> percent. This course is complete, and you can print your certificate after completing an evaluation. Your certificate will be available for download or print through your Medicare Learning Network&reg; (MLN) transcript. Select the “View detailed instructions on how to receive your certificate” button for instructions on how to print your certificate.</p>
+					
+					<p>
+						Your certificate is available to print.
+						<a class="link-button btn-cta dynamic no-print" href="javascript:openResources('REVIEW')" tabindex="-1">Review your answers</a>
+						<a class="link-button btn-cta no-print" href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNEdWebGuide/Downloads/MLN-WBT-Certificate-INX.pdf" tabindex="-1">View detailed instructions on how to receive your certificate</a>
+					</p>
+				</div>
+				
+				<div id="REPASS_PASS">
+					<p>Congratulations <span class="first-name"></span>! You scored <span id="FINAL_PERCENT6" class="bold"></span> <span class="bold">percent</span> on your current attempt of the Post-Assessment. This is equal to or better than your previous passing score. This course is complete, and you can print your certificate after completing an evaluation. Your certificate will be available for download or print through your Medicare Learning Network&reg; (MLN) transcript. Select the “View detailed instructions on how to receive your certificate” button for instructions on how to print your certificate.</p>
+					
+					<p>
+						Your certificate is available to print.
+						<a class="link-button btn-cta dynamic no-print" href="javascript:openResources('REVIEW')" tabindex="-1">Review your answers</a>
+						<a class="link-button btn-cta no-print" href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNEdWebGuide/Downloads/MLN-WBT-Certificate-INX.pdf" tabindex="-1">View detailed instructions on how to receive your certificate</a>
+					</p>
+				</div>
+				
+				<div id="FAILED">
+					<p>Good try <span class="first-name"></span>. You scored <span id="FINAL_PERCENT3" class="bold"></span> <span class="bold">percent</span> on the Post-Assessment. The course is now complete. <span class="score-update"></span> You have not received credit for passing. Select the “TRY AGAIN” button to review the course material and retake the Post-Assessment.</p>
+					
+					<p>
+						<a class="link-button btn-cta dynamic no-print" href="javascript:openResources('REVIEW')" tabindex="-1">Review your answers</a>
+					</p>
+				</div>
+
+			</div>
+		
+		</main>
+	</div>
+	
+	<nav class="navbar fixed-bottom z-fix">
+		<div class="container max-padded">
+			<div class="lesson-title CMS-art left">
+				<img src="../000-Main_Template_Files/main-svg/CMS-WBT-footer.svg" class="footer-flourish" alt="">
+			</div>
+			<div class="page-numbers">
+				Page <span id="PAGE_COUNT">X</span> of <span id="PAGE_TOTAL">X</span>
+			</div>
+		</div>
+		
+		<div class="nav-set foot-nav">
+			<button type="button" class="btn-goto" id="NAV_BACK" tabindex="-1">Back</button>
+			<button type="button" class="btn-goto" id="NAV_NEXT" tabindex="0">Next</button>
+			<img src="../000-Main_Template_Files/main-images/WBTfooterNavBG.png" class="no-mobile" alt="">
+			<img src="../000-Main_Template_Files/main-images/WBTfooterNavMobBG.png" class="mobile-only" alt="">
+			<span id="ALERT1">You did not pass the post-assessment. &nbsp; <a class="link-button btn-cta dynamic inline" href="javascript:doContinue('incomplete')" tabindex="-1">Try Again</a></span>
+			<span id="ALERT2">Answer the question to continue.</span>
+			<span id="ALERT3">Continue to Post-Assessment Summary.</span>
+		</div>
+	</nav>
+	
+	<aside class="container resource" id="REVIEW" tabindex="-1">
+		<div class="container resource-content default live"  data-page-number="Results">
+			<p id="PRINT_SCORE">Score for <span class="name"></span>: <span id="FINAL_PERCENT4"></span></p>
+			<a href="#" class="dynamic" onClick="window.print(); return(false);" tabindex="-1">Print your Post-Assessment results</a>
+		</div>
+	</aside>
+	
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	START REFERENCES/HELP
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<aside class="container resource" id="HELP" tabindex="-1">
+		<nav class="navbar">
+			<div class="nav-set resource-nav">
+				<button type="button" class="btn-resource" id="NAV_ACRONYMS" onClick="openResSection('ACRONYMS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-acronyms.png" alt="">
+					<span>ACRONYMS</span>
+				</button>
+				<!-- <button type="button" class="btn-resource" id="NAV_GLOSS_HELP" onClick="openResSection('GLOSS_HELP');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-glossary.png" alt="">
+					<span>GLOSSARY</span>
+				</button> -->
+				<!--<button type="button" class="btn-resource" id="NAV_HYPERLINKS" onClick="openResSection('HYPERLINKS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-sites.png" alt="">
+					<span>HYPERLINKS</span>
+				</button>-->
+				<button type="button" class="btn-resource" id="NAV_NAVIGATION" onClick="openResSection('NAVIGATION');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-nav.png" alt="">
+					<span>NAVIGATION</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_WINDOWS" onClick="openResSection('WINDOWS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-pop.png" alt="">
+					<span>POP-UP WINDOWS</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_PRINTING" onClick="openResSection('PRINTING');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-print.png" alt="">
+					<span>PRINTING</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_SCREEN" onClick="openResSection('SCREEN');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-viewport.png" alt="">
+					<span>SCREEN SETTINGS</span>
+				</button>
+			</div>
+			<button type="button" class="mobile-menu" tabindex="-1"><span></span><span></span><span></span> MENU</button>
+		</nav>
+		
+		<div class="container resource-content default live">
+			<h2 class="align-center">SELECT A TOPIC FOR MORE INFORMATION</h2>
+		</div>
+			
+		<div class="container resource-content" data-page-number="Help" id="ACRONYMS">
+			<h2>ACROMYNS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Acronyms Help"></a></span></h2>
+
+			<p>Throughout this course, some acronyms are dash underlined so you can see the acronym definition after the acronym was defined. You can hold your mouse over acronyms for a reminder of what the acronym means.</p>
+		</div>
+		
+		<div class="container resource-content" data-page-number="Help" id="GLOSS_HELP">
+			<h2>GLOSSARY <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Glossary Help"></a></span></h2>
+
+			<p>Close this window, then select “REFERENCE” at the top of the screen for a link to the Centers for Medicare &amp; Medicaid Services (CMS) Glossary webpage.</p>
+		</div>
+		
+		<!--<div class="container resource-content" data-page-number="Help" id="HYPERLINKS">
+			<h2>HYPERLINKS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Hyperlinks Help"></a></span></h2>
+
+			<p>Certain words in the course are hyperlinks you may select to connect to a webpage or a document. Hyperlinked words appear blue and underlined.</p>
+		</div>-->
+		
+		<div class="container resource-content" data-page-number="Help" id="NAVIGATION">
+			<h2>NAVIGATION <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Navigation Help"></a></span></h2>
+
+			<p>The course navigation is located in the bottom area of the course window. The “BACK” and “NEXT” buttons help navigate a lesson one page at a time. Use these buttons to move forward and backward through a lesson (the “BACK” button is not available in the Post-Assessment).</p>
+      
+      <p>Use the “EXIT” button in any lesson to save your progress and exit the course. If you need to exit the course prior to completion, always use the “EXIT” button rather than the “X” button in the upper right-hand (Microsoft&reg; Windows&reg;) or left-hand (Apple&reg; OS&reg;) corner of the window. If you exit the assessment before reaching the summary page, you’ll lose your progress.</p>
+      
+      <p>The course also contains buttons that open pages outside of the current lesson. The “REFERENCE” button will open a reference section that includes resources for more information.</p>
+      
+      <p>Use the “SUBMIT ANSWER” button to submit your answer to the assessment questions.</p>
+		</div>
+		
+		<div class="container resource-content" data-page-number="Help" id="WINDOWS">
+			<h2>POP-UP WINDOWS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Pop-Up Windows Help"></a></span></h2>
+
+			<p>Pop-up windows appear throughout this course as new browser windows when you select a hyperlink. To close a pop-up window, select the “X” button in the upper right-hand (Microsoft&reg; Windows&reg;) or left-hand (Apple&reg; OS&reg;) corner of the pop-up window.</p>
+		</div>
+		
+		<div class="container resource-content" data-page-number="Help" id="PRINTING">
+			<h2>PRINTING <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Printing Help"></a></span></h2>
+
+			<p>At any point in this course, you may print the current lesson by pressing CTRL-P<!-- or print the current page, lesson, or entire course by selecting the “PRINT” button on each page-->. There is also a "PRINT A COPY OF THIS LESSON" button on the first and last pages of each printable lesson.</p>
+      
+      <div>
+      	<h3>Printing Your Certificate</h3>
+        
+        <p>To print your certificate, you must pass the Post-Assessment and complete the course evaluation.</p>
+        
+        <p class="bold">Follow the <a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNEdWebGuide/Downloads/MLN-WBT-Certificate-INX.pdf" tabindex="-1">certificate instructions</a> for steps on how to access and/or print your certificate.</p>
+      </div> 
+		</div>
+		
+		<!--<div class="container resource-content" data-page-number="Help" id="MOUSE">
+			<h2>USING YOUR MOUSE <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Mouse Help"></a></span></h2>
+      
+      <p>Selecting buttons, hyperlinks, and answer choices activates them. Selecting refers to moving the mouse cursor over the object and pressing the left button on your mouse. Moving the mouse cursor over an underlined text hyperlink will highlight the hyperlink.</p>
+      
+      <p>Hyperlinks in the navigation bar at the top of the page will highlight when you move your mouse over them. When you move the mouse cursor over any hyperlink on the page, the arrow changes to a hand.</p>
+      
+      <p>You can also access all navigation, hyperlinks, and controls by using the tab key.</p>
+    </div>-->
+    
+    <div class="container resource-content" data-page-number="Help" id="SCREEN">
+			<h2>SCREEN SETTINGS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Screen Settings Help"></a></span></h2>
+      
+      <div>
+      	<h3>Zoom</h3>
+        
+      	<p>If you have trouble viewing the course, you may adjust the magnification (zoom) on the page.</p>
+        
+        <ul>
+        	<li>To zoom in, increasing the size of the content, press and hold Ctrl/Command while pressing the +&nbsp;key.</li>
+          <li>To zoom out, decreasing the size of the content, press and hold Ctrl/Command while pressing the -&nbsp;key.</li>
+        </ul>
+      </div>
+      
+      <div>
+      	<h3>Resolution</h3>
+        
+      	<p>If you are still experiencing problems, you may adjust your screen settings. Follow the instructions in the hyperlinks below to adjust your screen settings.</p>
+        
+        <ul>
+        	<!--<li><a href="https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/display_change_screen_resolution.mspx?mfr=true" class="inline" tabindex="-1">Windows XP&reg;</a></li>-->
+          <li><a href="https://support.microsoft.com/en-us/help/14108/windows-7-change-screen-resolution" class="inline" tabindex="-1">Windows 7&reg;</a></li>
+          <li><a href="https://support.microsoft.com/en-us/help/14217/windows-8-get-best-display-on-your-monitor" class="inline" tabindex="-1">Windows 8&reg;</a></li>
+          <li><a href="https://support.microsoft.com/en-us/help/4027860/windows-10-view-display-settings" class="inline" tabindex="-1">Windows 10&reg;</a></li>
+        </ul>
+      </div>
+    </div>
+	</aside>
+	
+	<aside class="container resource" id="REFERENCE" tabindex="-1">
+		<nav class="navbar">
+			<div class="nav-set resource-nav">
+				<button type="button" class="btn-resource" id="NAV_DISCLAIMERS" onClick="openResSection('DISCLAIMERS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-disclaimer.png" alt="">
+					<span>DISCLAIMERS</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_GLOSSARY" onClick="openResSection('GLOSSARY');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-glossary.png" alt="">
+					<span>GLOSSARY</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_SITES" onClick="openResSection('SITES');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-sites.png" alt="">
+					<span>HELPFUL WEBSITES</span>
+				</button>
+				<button type="button" class="btn-resource" id="NAV_AIDS" onClick="openResSection('AIDS');" tabindex="-1">
+					<img src="../000-Main_Template_Files/main-images/resources/icon-aids.png" alt="">
+					<span>JOB AIDS</span>
+				</button>
+			</div>
+			<button type="button" class="mobile-menu" tabindex="-1"><span></span><span></span><span></span> MENU</button>
+		</nav>
+		
+		<div class="container resource-content default live">
+			<h2 class="align-center">SELECT A TOPIC FOR MORE INFORMATION</h2>
+		</div>
+		
+		<div class="container resource-content" data-page-number="Reference" id="DISCLAIMERS">
+			<h2>DISCLAIMERS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Disclaimers"></a></span></h2>
+      
+      <p>This course was current at the time it was published or uploaded onto the web. Medicare policy changes frequently so links to the source documents have been provided within the document for your reference.</p>
+      
+      <p>This course was prepared as a service to the public and is not intended to grant rights or impose obligations. This course may contain references or links to statutes, regulations, or other policy materials. The information provided is only intended to be a general summary. It is not intended to take the place of either the written law or regulations. We encourage readers to review the specific statutes, regulations, and other interpretive materials for a full and accurate statement of their contents.</p>
+      
+      <div>
+      	<h3>The Medicare Learning Network&reg; (MLN)</h3>
+        
+        <p>The Medicare Learning Network&reg;, <abbr title="Medicare Learning Network&reg;">MLN</abbr> Connects&reg;, and MLN Matters&reg; are registered trademarks of the U.S. Department of Health &amp; Human Services (HHS).</p>
+      </div>
+      
+      <div>
+      	<h3>CPT Disclaimer – American Medical Association (AMA) Notice</h3>
+        
+        <p>CPT codes, descriptions and other data only are copyright 2018 American Medical Association. All Rights Reserved. Applicable FARS/HHSAR apply.</p>
+        
+        <p>CPT is a registered trademark of the American Medical Association. Applicable FARS/HHSAR Restrictions Apply to Government Use.</p>
+        
+        <p>Fee schedules, relative value units, conversion factors and/or related components are not assigned by the AMA, are not part of CPT, and the AMA is not recommending their use. The AMA does not directly or indirectly practice medicine or dispense medical services. The AMA assumes no liability for data contained or not contained herein.</p>
+      </div>
+      
+      <div>
+      	<h3>NUBC Disclaimer</h3>
+        
+				<p>Copyright &copy; 2018, the American Hospital Association, Chicago, Illinois. Reproduced with permission. No portion of the AHA copyrighted materials contained within this publication may be copied without the express written consent of the AHA. AHA copyrighted materials including the UB-04 codes and descriptions may not be removed, copied, or utilized within any software, product, service, solution or derivative work without the written consent of the AHA. If an entity wishes to utilize any AHA materials, please contact the AHA at 312-893-6816.</p>
+        
+        <p>Making copies or utilizing the content of the UB-04 Manual, including the codes and/or descriptions, for internal purposes, resale and/or to be used in any product or publication; creating any modified or derivative work of the UB-04 Manual and/or codes and descriptions; and/or making any commercial use of UB-04 Manual or any portion thereof, including the codes and/or descriptions, is only authorized with an express license from the American Hospital Association.</p>
+        
+        <p>To license the electronic data file of UB-04 Data Specifications, contact Tim Carlson at (312) 893-6816 or Laryssa Marshall at (312) 893-6814. You may also contact us at <a href="mailto:ub04@healthforum.com" class="dynamic" tabindex="-1">ub04@healthforum.com</a>.</p>
+        
+        <p>The American Hospital Association (the “AHA”) has not reviewed, and is not responsible for, the completeness or accuracy of any information contained in this material, nor was the AHA or any of its affiliates, involved in the preparation of this material, or the analysis of information provided in the material. The views and/or positions presented in the material do not necessarily represent the views of the AHA. CMS and its products and services are not endorsed by the AHA or any of its affiliates.</p>
+      </div>
+    </div>
+    
+    <div class="container resource-content" data-page-number="Reference" id="GLOSSARY">
+			<h2>GLOSSARY <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Glossary Information"></a></span></h2>
+      
+      <p>For glossary terms, visit the <a href="https://www.cms.gov/apps/glossary" tabindex="-1">Centers for Medicare &amp; Medicaid Services Glossary</a>.</p>
+    </div>
+    
+    <div class="container resource-content" data-page-number="Reference" id="SITES">
+			<h2>HELPFUL WEBSITES <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Helpful Websites"></a></span></h2>
+      
+			<p>The list below provides additional resources related to this course. Please note that all of the following information was accurate at the time this course was created; however, information may change. For more information about SNFs, visit the <a href="https://www.cms.gov/Center/Provider-Type/Skilled-Nursing-Facility-Center.html" class="inline" target="_blank" rel="noopener" tabindex="-1">Skilled Nursing Facility Center webpage</a>.</p>
+      
+      <ul class="bulletless no-indent">
+      	<li>CMS Medicare Learning Network&reg; (MLN)
+      		<ul>
+						<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNGenInfo/index.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNGenInfo/index.html</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS Physician Center
+      		<ul>
+      			<li><a href="https://www.cms.gov/Center/Provider-Type/Physician-Center.html" class="inline internal" tabindex="-1">https://www.cms.gov/Center/Provider-Type/Physician-Center.html</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS Skilled Nursing Facility (SNF) Consolidated Billing (CB)
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS SNF CB Fiscal Intermediary (FI) File Explanation
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FI_File_Explanation.html" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FI_File_Explanation.html</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS SNF CB Major Category Explanation
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/Downloads/14MajorCatExpl.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/Downloads/14MajorCatExpl.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS SNF CB Part B Medicare Administrative Contractor (MAC) File Explanation
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FileExplanation.html" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Billing/SNFConsolidatedBilling/FileExplanation.html</a></li>
+      		</ul>
+      	</li>
+      	<li>CMS SNF Prospective Payment System (PPS)
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Medicare-Fee-For-Service-Payment/SNFPPS" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Medicare-Fee-For-Service-Payment/SNFPPS</a></li>
+      		</ul>
+      	</li>
+      	<li>Current Procedural Terminology (CPT) books
+      		<ul>
+      			<li><a href="https://commerce.ama-assn.org/store" class="inline internal" tabindex="-1">https://commerce.ama-assn.org/store</a></li>
+      		</ul>
+      	</li>
+      	<li>MDS 3.0
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/NursingHomeQualityInits/NHQIMDS30.html" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/NursingHomeQualityInits/NHQIMDS30.html</a></li>
+      		</ul>
+      	</li>
+      	<li>Medicare Benefit Policy Manual, Chapter 8
+      		<ul>
+      			<li><a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/bp102c08.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/bp102c08.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>Medicare Billing Information for Rural Providers and Suppliers Booklet
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243515.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243515.html</a></li>
+      		</ul>
+      	</li>
+      	<li>Medicare Claims Processing Manual, Chapter 6
+      		<ul>
+      			<li><a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/clm104c06.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/clm104c06.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>Medicare Claims Processing Manual, Chapter 7
+      		<ul>
+      			<li><a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/clm104c07.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/clm104c07.pdf</a></li>
+      		</ul>
+      	</li>
+      	<!--<li>Medicare Learning Network&reg; Electronic Mailing Lists: Keeping Health Care Professionals Informed Fact Sheet
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243324.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243324.html</a></li>
+      		</ul>
+      	</li>-->
+      	<li>MLN Matters&reg; Article, Skilled Nursing Facility (SNF) Consolidated Billing Service Furnished Under an ‘Arrangement’ with an Outside Entity
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3592.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3592.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Article, Changes for Medicare’s Skilled Nursing Facility (SNF) Consolidated Billing (CB) Edits for Evaluation and Management (E&amp;M) Services Billed by Hospitals to Fiscal Intermediaries (FIs)
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3910.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM3910.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Article, Manual Updates to Clarify Skilled Nursing Facility (SNF), Inpatient Rehabilitation Facility (IRF), Home Health (HH), and Outpatient (OPT) Coverage Pursuant to Jimmo vs. Sebelius
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM8458.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/MM8458.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Special Edition Article, Skilled Nursing Facility Consolidated Billing
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/se0431.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/se0431.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Special Edition Article, Medicare Prescription Drug, Improvement, and Modernization Act (MMA) – Skilled Nursing Facility Consolidated Billing and Services of Rural Health Clinics and Federally Qualified Health Centers
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/SE0438.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/Downloads/SE0438.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Matters Article, ‘Incident to’ Services
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/se0441.pdf" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNMattersArticles/downloads/se0441.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>MLN Provider Compliance Website
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/ProviderCompliance.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/ProviderCompliance.html</a></li>
+      		</ul>
+      	</li>
+      	<li>Office of Inspector General Comparison of the Anti-Kickback Statute and Stark Law
+      		<ul>
+      			<li><a href="https://oig.hhs.gov/compliance/provider-compliance-training/files/starkandakscharthandout508.pdf" class="inline internal" tabindex="-1">https://oig.hhs.gov/compliance/provider-compliance-training/files/starkandakscharthandout508.pdf</a></li>
+      		</ul>
+      	</li>
+      	<li>Resources for Medicare Beneficiaries
+      		<ul>
+      			<li>
+      				<p>1-800-MEDICARE (1-800-633-4227)/TTY 1-877-486-2048 <br><a href="https://www.medicare.gov/" class="inline internal" tabindex="-1">https://www.medicare.gov/</a></p>
+      				<!--<p>“Resources for Medicare Beneficiaries” Publication <br><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/ICN905183.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/ICN905183.html</a></p>-->
+      			</li>
+      		</ul>
+      	</li>
+      	<li>Skilled Nursing Facility Prospective Payment System Booklet
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243671.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243671.html</a></li>
+      		</ul>
+      	</li>
+      	<li>Swing Bed Services Fact Sheet
+      		<ul>
+      			<li><a href="https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243409.html" class="inline internal" tabindex="-1">https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/MLN-Publications-Items/CMS1243409.html</a></li>
+      		</ul>
+      	</li>
+      	<li>“Under Arrangement” Best Practices and Sample Forms
+      		<ul>
+      			<li><a href="https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/SNFPPS/BestPractices.html" class="inline internal" tabindex="-1">https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/SNFPPS/BestPractices.html</a></li>
+      		</ul>
+      	</li>
+      </ul>
+    </div>
+    
+    <div class="container resource-content" data-page-number="Reference" id="AIDS">
+			<h2>JOB AIDS <span class="no-print"><a href="#" class="dynamic" tabindex="-1" onClick="window.print(); return(false);"><img src="../000-Main_Template_Files/main-images/button-print.gif" alt="Print the Job Aids List"></a></span></h2>
+      
+      <p>The job aids provide additional information relating to this course.</p>
+      
+      <ul>
+      	<!-- Replace '0XX' with proper course number -->
+      	<li><a href="../013-resources/013JobAidA.html" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid A – Common SNF Documentation Errors</a></li>
+        <li><a href="../013-resources/013JobAidB.pdf" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid B – Determining Consolidated Billing for Institutional Services</a></li>
+        <li><a href="../013-resources/013JobAidC.pdf" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid C – Determining Consolidated Billing for Professional Services</a></li>
+        <li><a href="../013-resources/013JobAidD.html" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid D – SNF Consolidated Billing Parts A and B Code Files</a></li>
+        <li><a href="../013-resources/013JobAidE.html" tabindex="-1" target="_blank" onClick="openLink(this.href); return false;">Job Aid E – Frequently Asked Questions about SNF Consolidated Billing</a></li>
+      </ul>
+    </div>
+	</aside>
+
+<!-- Core JavaScript -->
+<script src="../000-Main_Template_Files/main-js/WBTnavigation-assess.js"></script>
+<script src="../000-Main_Template_Files/main-js/WBTresources.js"></script>
+<!-- Assessment JavaScript -->
+<script src="../000-Main_Template_Files/main-js/WBTassess.js"></script>
+
+<!-- POST-ASSESSMENT SCORM -->
+<script>
+	loadPage();
+	addNamePost();
+</script>
+
+    <!-- ADD PADDING TO LAST ELEMENT BEFORE SIDEBAR, ONLY WHEN WINDOW IS SIZED 700+ -->
+    <script>
+        if ( $(window).width() > 699) {
+            $( 'aside.page-sidebar' ).prev().css( 'padding-bottom', '75px' );
+    }
+        else {
+           $( 'aside.page-sidebar' ).prev().css( 'padding-bottom', '15px' );
+    }   
+    </script>
+    <script>
+    $(window).resize(function() {
+        if( $(this).width() > 699 ) {
+            $( 'aside.page-sidebar' ).prev().css( 'padding-bottom', '75px' );
+        }
+        else {
+           $( 'aside.page-sidebar' ).prev().css( 'padding-bottom', '15px' );
+        }
+    });
+    </script>       
+
+
+</body>
+
+</html>

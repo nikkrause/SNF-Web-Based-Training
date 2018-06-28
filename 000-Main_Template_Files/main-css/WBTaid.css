@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#JOBAID {padding:15px 5px;}
+#JOBAID header, #JOBAID h1 {height:auto; margin-bottom:10px; text-align:center;}
+#JOBAID h1 {font-size:165%; padding-bottom:10px; margin-bottom:30px; border-bottom:2px solid;}
+#JOBAID h2, #JOBAID h3 {margin:30px 0 5px 0;}
+#JOBAID figure {width:100%; height:auto; overflow:auto;}
+#JOBAID figure img {width:100%;}
+
+@media print
+	
+{
+	html {font-size:11pt !important;}
+	#JOBAID a {display:inline !important; text-decoration:none !important;}
+	#JOBAID a.block::after {content:"On the web at: "attr(href) !important; display:block; font-size:95% !important; font-style:italic !important;}
+	#JOBAID a.inline::after {content:' (On the web at: 'attr(href)')'; font-size:95% !important; font-style:italic !important; word-break:break-all !important;}
+	#JOBAID a.internal::after {content:'';}
+	#JOBAID a.internal {color:#000;}
+	
+	.no-print {display:none !important;}
+}
